@@ -1,0 +1,513 @@
+{
+  "schema_version": "traveler-wave-state-v1",
+  "generated_at": "2026-09-16T21:38:13+09:00",
+  "current_wave": "W01",
+  "waves": [
+    {
+      "wave_id": "W01",
+      "title": "Airbnb 스타일 공통 UI, 정적 데이터, Layout",
+      "task_ids": [
+        "DATA-ABOUT-PROFILE",
+        "DATA-COUNTRY-SAFETY",
+        "DATA-DESTINATIONS-DOMESTIC",
+        "DATA-DESTINATIONS-OVERSEAS",
+        "DATA-POLICY-PAGES",
+        "SHARED-EXTERNAL-LINK-GUARD",
+        "SHARED-FAVORITES-STORE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W02",
+      "title": "Airbnb 스타일 공통 UI, 정적 데이터, Layout",
+      "task_ids": [
+        "SHARED-LAYOUT-HEADER-FOOTER",
+        "SHARED-SEO-METADATA",
+        "SHARED-SHARE-UTIL",
+        "SHARED-UI-KIT-PRIMITIVES",
+        "SHARED-ERROR-BOUNDARY",
+        "SHARED-TOAST-NOTIFICATIONS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W03",
+      "title": "Supabase Auth, 6개 Table, 기본 RLS, API Route",
+      "task_ids": [
+        "DB-SCHEMA-BASE",
+        "DB-RLS-BASE",
+        "DB-ACCESS",
+        "API-ADMIN-ROUTES",
+        "API-MATES-ROUTES",
+        "DB-SEED-BASE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W04",
+      "title": "SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR001-DEST-DETAIL-DRAWER",
+        "CMP-SCR001-DOMESTIC-DEST-CARDS",
+        "CMP-SCR001-HERO",
+        "CMP-SCR001-OVERSEAS-DEST-CARDS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W05",
+      "title": "SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR001-RECENT-MATE-CARDS",
+        "CMP-SCR001-SAFETY-PREVIEW-CARDS",
+        "CMP-SCR001-THEME-MOTIVATION-CHIPS",
+        "PO-SCR-001"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W06",
+      "title": "SCR-002 대표 소개 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR002-COUNTRY-CHIPS",
+        "CMP-SCR002-GALLERY",
+        "CMP-SCR002-HERO-STATS",
+        "CMP-SCR002-PHILOSOPHY-CHECKLIST",
+        "CMP-SCR002-RECOMMENDED-GRID",
+        "CMP-SCR002-TIMELINE",
+        "PO-SCR-002"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W07",
+      "title": "SCR-003 여행 입력·외부 이동·동행글 입력 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR003-INTRO-TABS-SHELL",
+        "CMP-SCR003-FLIGHT-FORM",
+        "CMP-SCR003-HOTEL-FORM",
+        "CMP-SCR003-MATE-WRITE-FORM",
+        "CMP-SCR003-TIPS-SAFETY-CTA",
+        "PO-SCR-003"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W08",
+      "title": "SCR-004 동행 목록·상세·신청 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR004-DETAIL-PANEL",
+        "CMP-SCR004-FILTER-SUMMARY",
+        "CMP-SCR004-CARD-GRID",
+        "CMP-SCR004-INTRO-CTA",
+        "CMP-SCR004-PARTICIPATION-REQUEST",
+        "CMP-SCR004-REPORT-BLOCK-ACTIONS",
+        "PO-SCR-004"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W09",
+      "title": "SCR-005 계정·내 활동·간단 관리자 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR005-ADMIN",
+        "CMP-SCR005-AUTH-GUEST",
+        "CMP-SCR005-MY-ACTIVITY-BLOCKS-FAVORITES",
+        "CMP-SCR005-MY-ACTIVITY-POSTS",
+        "CMP-SCR005-PROFILE",
+        "PO-SCR-005"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W10",
+      "title": "Unit·Playwright·접근성·CI",
+      "task_ids": [
+        "CI-LINT-TYPECHECK",
+        "E2E-MATE-AUTH",
+        "E2E-PUBLIC-SMOKE",
+        "E2E-TRAVEL-TOOLS",
+        "MANUAL-CHECK-A11Y-KEYBOARD",
+        "MANUAL-CHECK-EXTERNAL-LINKS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W11",
+      "title": "Unit·Playwright·접근성·CI",
+      "task_ids": [
+        "MANUAL-CHECK-RESPONSIVE",
+        "TEST-RLS-BASIC",
+        "UNIT-CONTACT-DETECTION",
+        "UNIT-MATE-STATE",
+        "UNIT-TRAVEL-DATES"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W12",
+      "title": "Vercel Preview와 Release 확인",
+      "task_ids": [
+        "RELEASE-CHECK-CONTENT-COMPLETENESS",
+        "RELEASE-CHECK-DEPLOY-ENV"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    }
+  ],
+  "tasks": {
+    "DATA-ABOUT-PROFILE": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DATA-COUNTRY-SAFETY": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DATA-DESTINATIONS-DOMESTIC": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DATA-DESTINATIONS-OVERSEAS": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DATA-POLICY-PAGES": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-EXTERNAL-LINK-GUARD": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-FAVORITES-STORE": {
+      "wave": "W01",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-LAYOUT-HEADER-FOOTER": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-SEO-METADATA": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-SHARE-UTIL": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-UI-KIT-PRIMITIVES": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-ERROR-BOUNDARY": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "SHARED-TOAST-NOTIFICATIONS": {
+      "wave": "W02",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DB-SCHEMA-BASE": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DB-RLS-BASE": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DB-ACCESS": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "API-ADMIN-ROUTES": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "API-MATES-ROUTES": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "DB-SEED-BASE": {
+      "wave": "W03",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-DEST-DETAIL-DRAWER": {
+      "wave": "W04",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-DOMESTIC-DEST-CARDS": {
+      "wave": "W04",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-HERO": {
+      "wave": "W04",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-OVERSEAS-DEST-CARDS": {
+      "wave": "W04",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-RECENT-MATE-CARDS": {
+      "wave": "W05",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-SAFETY-PREVIEW-CARDS": {
+      "wave": "W05",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR001-THEME-MOTIVATION-CHIPS": {
+      "wave": "W05",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "PO-SCR-001": {
+      "wave": "W05",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-COUNTRY-CHIPS": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-GALLERY": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-HERO-STATS": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-PHILOSOPHY-CHECKLIST": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-RECOMMENDED-GRID": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR002-TIMELINE": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "PO-SCR-002": {
+      "wave": "W06",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR003-INTRO-TABS-SHELL": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR003-FLIGHT-FORM": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR003-HOTEL-FORM": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR003-MATE-WRITE-FORM": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR003-TIPS-SAFETY-CTA": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "PO-SCR-003": {
+      "wave": "W07",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-DETAIL-PANEL": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-FILTER-SUMMARY": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-CARD-GRID": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-INTRO-CTA": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-PARTICIPATION-REQUEST": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR004-REPORT-BLOCK-ACTIONS": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "PO-SCR-004": {
+      "wave": "W08",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR005-ADMIN": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR005-AUTH-GUEST": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR005-MY-ACTIVITY-BLOCKS-FAVORITES": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR005-MY-ACTIVITY-POSTS": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CMP-SCR005-PROFILE": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "PO-SCR-005": {
+      "wave": "W09",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "CI-LINT-TYPECHECK": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "E2E-MATE-AUTH": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "E2E-PUBLIC-SMOKE": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "E2E-TRAVEL-TOOLS": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "MANUAL-CHECK-A11Y-KEYBOARD": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "MANUAL-CHECK-EXTERNAL-LINKS": {
+      "wave": "W10",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "MANUAL-CHECK-RESPONSIVE": {
+      "wave": "W11",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "TEST-RLS-BASIC": {
+      "wave": "W11",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "UNIT-CONTACT-DETECTION": {
+      "wave": "W11",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "UNIT-MATE-STATE": {
+      "wave": "W11",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "UNIT-TRAVEL-DATES": {
+      "wave": "W11",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "RELEASE-CHECK-CONTENT-COMPLETENESS": {
+      "wave": "W12",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    },
+    "RELEASE-CHECK-DEPLOY-ENV": {
+      "wave": "W12",
+      "status": "PENDING",
+      "updated_at": "2026-09-16T21:38:13+09:00"
+    }
+  }
+}

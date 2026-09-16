@@ -1,0 +1,169 @@
+{
+  "schema_version": "traveler-screen-route-v1",
+  "framework": "nextjs-app-router",
+  "source_documents": [
+    "docs/03_UI_COVERAGE_ANALYSIS.md",
+    "docs/04_UIUX_PLAN.md",
+    "docs/STITCH_VALIDATION_REPORT.md",
+    "design-reference/D-001/DESIGN.md",
+    "design-reference/DESIGN_MANIFEST.md"
+  ],
+  "screens": [
+    {
+      "screen_id": "SCR-001",
+      "route": "/",
+      "page_entry": "src/app/page.tsx",
+      "title": "메인",
+      "tier": "core",
+      "stitch_screen_ids": {
+        "desktop": "5d31f236698d4cc8a1c33873732d75cb",
+        "mobile": "78ca18768f2d4d3c9c25ea68265012d3"
+      },
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": true
+    },
+    {
+      "screen_id": "SCR-002",
+      "route": "/about",
+      "page_entry": "src/app/about/page.tsx",
+      "title": "대표 소개",
+      "tier": "supplementary",
+      "stitch_screen_ids": {
+        "desktop": "e910f311e79d4b8f84633cb1a540181e",
+        "mobile": null
+      },
+      "page_owner_task_required": true,
+      "preview_required": true
+    },
+    {
+      "screen_id": "SCR-003",
+      "route": "/travel-tools",
+      "page_entry": "src/app/travel-tools/page.tsx",
+      "title": "통합 여행 준비",
+      "tier": "core",
+      "stitch_screen_ids": {
+        "desktop": "ee1a4a3309b940fb92514c2ca2b87d79",
+        "mobile": "4beaeadd323b4350a0e8c47b6336ef71"
+      },
+      "page_owner_task_required": true,
+      "preview_required": true
+    },
+    {
+      "screen_id": "SCR-004",
+      "route": "/mates",
+      "page_entry": "src/app/mates/page.tsx",
+      "title": "동행 조회",
+      "tier": "core",
+      "stitch_screen_ids": {
+        "desktop": "a29c79d328814603ac11416e5e561a84",
+        "mobile": null
+      },
+      "page_owner_task_required": true,
+      "preview_required": true
+    },
+    {
+      "screen_id": "SCR-005",
+      "route": "/account",
+      "page_entry": "src/app/account/page.tsx",
+      "title": "계정·관리",
+      "tier": "core",
+      "stitch_screen_ids": {
+        "desktop": "08a13de0949a46b2af3f6e4e9b4c959d",
+        "mobile": null
+      },
+      "page_owner_task_required": true,
+      "preview_required": true
+    }
+  ],
+  "tier_summary": {
+    "core_count": 4,
+    "core_screens": ["SCR-001", "SCR-003", "SCR-004", "SCR-005"],
+    "supplementary_count": 1,
+    "supplementary_screens": ["SCR-002"]
+  },
+  "technical_routes": [
+    {
+      "path": "src/app/auth/callback/route.ts",
+      "type": "auth_callback",
+      "description": "Supabase Auth 이메일 인증·OAuth 콜백 처리. 디자인 Screen으로 세지 않는다.",
+      "counted_as_screen": false
+    },
+    {
+      "path": "src/app/api/**/route.ts",
+      "type": "api_route",
+      "description": "REQ-FUNC API 목록(destinations, safety, mates, applications, blocks, reports, admin/*)에 대응하는 Route Handler. 항공·호텔 폼은 서버 API를 두지 않는다(D-001 §10, docs/04_UIUX_PLAN.md). 디자인 Screen으로 세지 않는다.",
+      "counted_as_screen": false
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "type": "not_found",
+      "description": "404 처리. REQ-FUNC-078 복구 행동(홈/재시도) 포함. 디자인 Screen으로 세지 않는다.",
+      "counted_as_screen": false
+    },
+    {
+      "path": "src/app/error.tsx",
+      "type": "error_boundary",
+      "description": "500·런타임 오류 처리. REQ-FUNC-078 복구 행동 포함. 디자인 Screen으로 세지 않는다.",
+      "counted_as_screen": false
+    }
+  ],
+  "required_navigation": [
+    {
+      "type": "global_header_nav",
+      "description": "Header의 5개 내비게이션 링크(메인/대표 소개/여행 준비/동행 찾기/계정)로 5개 Screen이 서로 전부 연결된다.",
+      "connects": ["SCR-001", "SCR-002", "SCR-003", "SCR-004", "SCR-005"]
+    },
+    {
+      "from": "SCR-001",
+      "to": "SCR-003",
+      "trigger": "여행지 상세 Drawer 또는 CTA Banner의 '여행 준비 시작하기' 클릭"
+    },
+    {
+      "from": "SCR-001",
+      "to": "SCR-002",
+      "trigger": "대표 소개 링크 카드 클릭"
+    },
+    {
+      "from": "SCR-002",
+      "to": "SCR-001",
+      "trigger": "추천 여행지 카드 또는 방문 국가 Chip 클릭 → 해당 여행지 상세 Drawer"
+    },
+    {
+      "from": "SCR-003",
+      "to": "SCR-005",
+      "trigger": "동행 글쓰기 탭에서 비로그인 상태로 작성 시도 → 로그인 유도"
+    },
+    {
+      "from": "SCR-003",
+      "to": "SCR-004",
+      "trigger": "동행 모집글 작성 완료 → 해당 모집글 상세로 이동, 또는 '동행 찾기로 이동' CTA"
+    },
+    {
+      "from": "SCR-004",
+      "to": "SCR-003",
+      "trigger": "'새 모집글 작성' CTA → 동행 글쓰기 탭"
+    },
+    {
+      "from": "SCR-004",
+      "to": "SCR-005",
+      "trigger": "비로그인 상태로 참가 요청·신고·차단 시도 → 로그인 유도, 또는 작성자가 '내 활동'에서 요청 관리"
+    },
+    {
+      "from": "SCR-005",
+      "to": "SCR-001",
+      "trigger": "즐겨찾기 목록 항목 클릭 → 해당 여행지 상세 Drawer"
+    },
+    {
+      "from": "SCR-005",
+      "to": "SCR-004",
+      "trigger": "'내 글' 탭에서 내 모집글 클릭 → 해당 모집글 상세"
+    }
+  ],
+  "completion_checks": {
+    "route_uniqueness": "PASS — 5개 route(/, /about, /travel-tools, /mates, /account) 중복 없음",
+    "page_entry_uniqueness": "PASS — 5개 page_entry 경로 중복 없음",
+    "screen_count": 5,
+    "tier_split_present": true
+  }
+}
