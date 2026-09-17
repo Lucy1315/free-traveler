@@ -30,7 +30,7 @@
         "SHARED-ERROR-BOUNDARY",
         "SHARED-TOAST-NOTIFICATIONS"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
