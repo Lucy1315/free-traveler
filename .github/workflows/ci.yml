@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Vercel 배포·DB Migration·자동 Commit/PR/Merge는 이 Workflow에서 실행하지
+# 않는다(사람이 직접 한다, CLAUDE.md 규칙 20·21). AWS/EC2 Credential·배포
+# Step도 두지 않는다(CLAUDE.md 규칙 17, AWS_ENABLED=false).
+
+jobs:
+  quality:
+    name: Quality (lint · typecheck · unit · contract · build)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Format check
+        run: npm run format:check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm run test:unit
+
+      - name: Task contract audit
+        run: npm run task:contract
+
+      - name: Screen contract check (ci mode)
+        run: npm run screen:contract -- --mode=ci
+
+      - name: Build
+        run: npm run build
+
+  public-smoke:
+    name: Public E2E Smoke (Chromium, no login)
+    needs: quality
+    runs-on: ubuntu-latest
+    # 로그인이 필요한 Smoke(E2E-006~007, tests/e2e/auth-smoke.spec.ts)는 여기서
+    # 돌리지 않는다 — Supabase 테스트 계정 Secret 없이도 이 Job은 항상 통과
+    # 가능해야 하고, 인증 Smoke를 병합의 필수 Gate로 삼지 않는다.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run public smoke tests
+        run: npm run test:e2e:public
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

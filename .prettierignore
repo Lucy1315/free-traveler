@@ -1,0 +1,16 @@
+# 자동 생성 파일
+node_modules
+.next
+package-lock.json
+
+# 요구사항·Task·Wave·디자인 문서 — 이 저장소의 정본 산출물이며 Prettier 대상이 아니다.
+docs/
+TASKS/
+design-reference/
+test/
+*.md
+
+# Playwright/커버리지 산출물
+test-results/
+playwright-report/
+coverage/

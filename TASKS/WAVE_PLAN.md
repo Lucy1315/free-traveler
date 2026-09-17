@@ -4,7 +4,7 @@
 `/prepare-task`·`/run-wave`가 이 파일을 읽는다. Wave 계획 변경은 사람이 직접 하거나
 `scripts/build_waves.py`를 다시 실행해 전체를 재생성한다(부분 수동 편집은 피한다).
 
-생성 시각: 2026-09-16T21:38:13+09:00
+생성 시각: 2026-09-17T20:21:24+09:00
 
 ## W01 — Airbnb 스타일 공통 UI, 정적 데이터, Layout
 - Preview Checkpoint: false
