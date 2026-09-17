@@ -181,8 +181,8 @@
   "tasks": {
     "DATA-ABOUT-PROFILE": {
       "wave": "W01",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-17T20:35:00+09:00"
     },
     "DATA-COUNTRY-SAFETY": {
       "wave": "W01",
