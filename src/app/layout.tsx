@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 import "./globals.css";
 
-const geistSans = Geist({
+// design-reference/D-001/DESIGN.md §3: 폰트는 Inter 하나만 쓴다(Proprietary
+// Font 파일 금지). globals.css의 기존 --font-geist-sans 변수명은 이 Task
+// Expected Files 밖이라 그대로 유지하고, Inter 폰트를 그 변수에 연결한다.
+const inter = Inter({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -19,11 +19,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="ko" className={`${inter.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col">
+        <Header />
+        <main className="flex flex-1 flex-col">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
