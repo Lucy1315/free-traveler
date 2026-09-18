@@ -461,8 +461,8 @@
     },
     "E2E-TRAVEL-TOOLS": {
       "wave": "W10",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:28:04+09:00"
     },
     "MANUAL-CHECK-A11Y-KEYBOARD": {
       "wave": "W10",
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-19T00:27:10+09:00"
+  "updated_at": "2026-09-19T00:28:04+09:00"
 }
