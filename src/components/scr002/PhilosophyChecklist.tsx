@@ -2,12 +2,10 @@
 // design-reference/D-001/DESIGN.md §16(좌우 분할)·§18(완성형 문장),
 // UI_CONTRACT.md 2장 기준. REQ-FUNC-058·062.
 //
-// REQ-FUNC-062 범위 참고: docs/PROJECT_SCOPE.md는 문의·SNS 링크를 "관리자
-// 외부 URL 설정 범위"(external_url_setting)로 관리하라고 하지만,
-// supabase/migrations/0001_schema.sql의 category 제약이 'flight'/'hotel'만
-// 허용해 현재 문의·SNS 값을 저장할 곳이 없다. 이 Task의 Depends On도
-// DATA-ABOUT-PROFILE뿐이라 DB를 읽지 않는다. 그래서 링크는 prop으로 받고,
-// https 값만 렌더링하며 빈 목록이면 영역 자체를 그리지 않는다(빈 값 미노출).
+// REQ-FUNC-062: 문의·SNS 링크는 external_url_setting(contact/instagram/
+// youtube/blog, 0003_contact_links.sql)에 저장되고, src/app/about/page.tsx가
+// 읽어서 prop으로 넘긴다. 이 컴포넌트는 허용 프로토콜(https, mailto)만
+// 렌더링하고 빈 목록이면 영역 자체를 그리지 않는다(빈 값 미노출).
 
 import Link from "next/link";
 import { aboutProfile } from "@/data/about";
@@ -26,7 +24,9 @@ export default function PhilosophyChecklist({
 }: PhilosophyChecklistProps) {
   const { philosophy, checklist } = aboutProfile;
   const visibleLinks = contactLinks.filter(
-    (link) => link.label.trim() && link.url.startsWith("https://"),
+    (link) =>
+      link.label.trim() &&
+      (link.url.startsWith("https://") || link.url.startsWith("mailto:")),
   );
 
   return (
@@ -95,8 +95,9 @@ export default function PhilosophyChecklist({
               <li key={link.url}>
                 <a
                   href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(link.url.startsWith("https://")
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
                   className="inline-flex min-h-[44px] items-center rounded-[8px] border border-[#C7C5C0] px-4 text-[14px] font-semibold text-[#26282C] hover:bg-[#F7F6F4]"
                 >
                   {link.label}

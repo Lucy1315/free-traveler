@@ -1,5 +1,7 @@
-// 항공·숙소 외부 URL 설정 Route Handler. SCR-005 Admin 탭(UI_CONTRACT 5장) 지원.
+// 외부 URL 설정 Route Handler. SCR-005 Admin 탭(UI_CONTRACT 5장) 지원.
 // REQ-FUNC-077: Admin이 항공·호텔 외부 URL을 허용목록 내 HTTPS 주소로 설정한다.
+// REQ-FUNC-062: 같은 설정 범위에서 대표 소개의 문의·SNS 링크도 관리한다
+// (contact/instagram/youtube/blog, 0003_contact_links.sql).
 //
 // Security/Privacy AC "Moderator/Admin RLS 재검증": 0002_rls.sql이 쓰기를
 // 최종 차단하지만, 이 Route Handler도 시작 시 역할을 명시적으로 재확인한다
@@ -9,13 +11,15 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { createServerSupabaseClient } from "@/lib/db/client";
 import {
+  EXTERNAL_URL_CATEGORIES,
   getUserProfile,
+  isAllowedExternalUrl,
   listExternalUrlSettings,
   upsertExternalUrlSetting,
   type ExternalUrlCategory,
 } from "@/lib/db/queries";
 
-const CATEGORIES: ReadonlyArray<ExternalUrlCategory> = ["flight", "hotel"];
+const CATEGORIES: ReadonlyArray<ExternalUrlCategory> = EXTERNAL_URL_CATEGORIES;
 
 async function requireModeratorOrAdmin() {
   const supabase = await createServerSupabaseClient();
@@ -60,7 +64,8 @@ export async function GET() {
   return NextResponse.json({ settings: data });
 }
 
-// PUT /api/admin/settings/outbound — { category: "flight"|"hotel", url: "https://..." }
+// PUT /api/admin/settings/outbound — { category, url }
+// url: https:// (contact만 mailto:도 허용)
 export async function PUT(request: NextRequest) {
   const auth = await requireModeratorOrAdmin();
   if ("error" in auth) {
@@ -82,13 +87,19 @@ export async function PUT(request: NextRequest) {
     );
   }
 
+  const category = body.category as ExternalUrlCategory;
   if (
     !body.url ||
     typeof body.url !== "string" ||
-    !body.url.startsWith("https://")
+    !isAllowedExternalUrl(category, body.url)
   ) {
     return NextResponse.json(
-      { error: "url은 https://로 시작하는 주소여야 합니다." },
+      {
+        error:
+          category === "contact"
+            ? "url은 https:// 또는 mailto:로 시작하는 주소여야 합니다."
+            : "url은 https://로 시작하는 주소여야 합니다.",
+      },
       { status: 400 },
     );
   }

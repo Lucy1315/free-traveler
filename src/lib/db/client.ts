@@ -42,6 +42,17 @@ export function createBrowserSupabaseClient() {
 }
 
 /**
+ * 로그인 세션 없이 공개 데이터(RLS가 anon에게 SELECT를 연 테이블)만 읽는
+ * 서버용 클라이언트. 쿠키를 읽지 않아 이를 쓰는 페이지가 요청마다 동적
+ * 렌더링으로 바뀌지 않는다(정적 생성 + revalidate 가능).
+ */
+export function createPublicSupabaseClient() {
+  return createSupabaseClient(getSupabaseUrl(), getSupabasePublishableKey(), {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
+
+/**
  * Server Component·Route Handler에서 쓰는 Supabase 클라이언트. 요청마다
  * 새로 만들어야 한다(클라이언트를 재사용하지 않는다 — @supabase/ssr 권장 사항).
  */

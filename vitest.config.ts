@@ -1,9 +1,16 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitest/config";
 
 // Unit Test 정본: src 안의 *.test.ts(x)/*.spec.ts(x)와 tests/unit만 수집한다.
 // tests/e2e는 Playwright 전용이라 여기서 절대 검색하지 않는다(CLAUDE.md 규칙 18 —
 // Playwright는 핵심 Chromium Smoke Task로만 범위를 제한한다).
 export default defineConfig({
+  // tsconfig.json의 "@/*" → "./src/*" 경로 별칭을 테스트에서도 쓴다.
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   test: {
     include: [
       "src/**/*.{test,spec}.{ts,tsx}",

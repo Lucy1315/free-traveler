@@ -475,7 +475,37 @@ export async function updateReportStatus(
 // external_url_setting
 // =============================================================
 
-export type ExternalUrlCategory = "flight" | "hotel";
+// flight/hotel: 항공·숙소 외부 이동(REQ-FUNC-077). contact/instagram/youtube/
+// blog: 대표 소개의 문의·SNS 링크(REQ-FUNC-062, 0003_contact_links.sql).
+export const EXTERNAL_URL_CATEGORIES = [
+  "flight",
+  "hotel",
+  "contact",
+  "instagram",
+  "youtube",
+  "blog",
+] as const;
+
+export type ExternalUrlCategory = (typeof EXTERNAL_URL_CATEGORIES)[number];
+
+export const CONTACT_LINK_CATEGORIES: ReadonlyArray<ExternalUrlCategory> = [
+  "contact",
+  "instagram",
+  "youtube",
+  "blog",
+];
+
+// 0003_contact_links.sql의 url CHECK와 같은 규칙: 모든 category는 https,
+// 문의(contact)만 mailto도 허용한다.
+export function isAllowedExternalUrl(
+  category: ExternalUrlCategory,
+  url: string,
+): boolean {
+  if (url.startsWith("https://")) {
+    return true;
+  }
+  return category === "contact" && url.startsWith("mailto:");
+}
 
 export interface ExternalUrlSettingRow {
   id: string;
@@ -504,16 +534,21 @@ export async function listExternalUrlSettings(supabase: SupabaseClient) {
     .returns<ExternalUrlSettingRow[]>();
 }
 
-// REQ-FUNC-077: Admin/Moderator만 쓸 수 있다(RLS가 강제). URL은 HTTPS만
-// 허용한다(DB CHECK 제약이 최종 방어선, 여기서도 한 번 더 형식을 검사한다).
+// REQ-FUNC-077·062: Admin/Moderator만 쓸 수 있다(RLS가 강제). 허용 프로토콜은
+// isAllowedExternalUrl이 정한다(DB CHECK 제약이 최종 방어선, 여기서도 한 번
+// 더 검사한다).
 export async function upsertExternalUrlSetting(
   supabase: SupabaseClient,
   category: ExternalUrlCategory,
   url: string,
   updatedBy: string,
 ) {
-  if (!url.startsWith("https://")) {
-    throw new Error("외부 URL은 https://로 시작해야 합니다.");
+  if (!isAllowedExternalUrl(category, url)) {
+    throw new Error(
+      category === "contact"
+        ? "문의 링크는 https:// 또는 mailto:로 시작해야 합니다."
+        : "외부 URL은 https://로 시작해야 합니다.",
+    );
   }
 
   return supabase
