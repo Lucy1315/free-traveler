@@ -58,7 +58,7 @@
         "CMP-SCR001-HERO",
         "CMP-SCR001-OVERSEAS-DEST-CARDS"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
