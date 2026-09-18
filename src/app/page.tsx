@@ -16,7 +16,8 @@
 
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Hero from "@/components/scr001/Hero";
 import DomesticDestinationGrid from "@/components/scr001/DomesticDestinationGrid";
 import OverseasDestinationGrid from "@/components/scr001/OverseasDestinationGrid";
@@ -39,15 +40,46 @@ function GridFallback() {
   );
 }
 
-export default function Home() {
-  const [selectedDestinationId, setSelectedDestinationId] = useState<
-    string | null
-  >(null);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+// 상세 Drawer의 열림 상태는 URL의 destinationId 쿼리로만 관리한다. 그래서
+// SCR-002 추천 카드(`/?destinationId=<id>`)로 들어오면 바로 열리고, 메인에서
+// 연 상세도 새로고침·공유 후 그대로 복원된다(REQ-FUNC-063·069). 다른 필터
+// 쿼리(domesticTheme 등)는 그대로 둔다.
+const DESTINATION_PARAM = "destinationId";
 
+function DestinationDrawerFromUrl() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const destinationId = searchParams.get(DESTINATION_PARAM);
+
+  function close() {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete(DESTINATION_PARAM);
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, {
+      scroll: false,
+    });
+  }
+
+  return (
+    <DestinationDetailDrawer
+      open={destinationId !== null}
+      onClose={close}
+      destinationId={destinationId}
+    />
+  );
+}
+
+export default function Home() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // 클릭 시점의 현재 쿼리를 읽는다(useSearchParams를 쓰지 않아 페이지 전체가
+  // 클라이언트 렌더링으로 밀려나지 않는다).
   function openDestination(destinationId: string) {
-    setSelectedDestinationId(destinationId);
-    setDrawerOpen(true);
+    const params = new URLSearchParams(window.location.search);
+    params.set(DESTINATION_PARAM, destinationId);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   }
 
   // SafetyPreviewCards는 국가명만 넘긴다(REQ-FUNC-046 관련 Task 참고) — 여기서
@@ -91,11 +123,9 @@ export default function Home() {
         <RecentMateCards />
       </div>
 
-      <DestinationDetailDrawer
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-        destinationId={selectedDestinationId}
-      />
+      <Suspense fallback={null}>
+        <DestinationDrawerFromUrl />
+      </Suspense>
     </>
   );
 }
