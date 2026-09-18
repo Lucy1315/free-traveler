@@ -18,7 +18,7 @@ import Link from "next/link";
 import TextInput from "@/components/ui/TextInput";
 import Button from "@/components/ui/Button";
 import Chip from "@/components/ui/Chip";
-import { createBrowserSupabaseClient } from "@/lib/db/client";
+import { createBrowserSupabaseClient } from "@/lib/db/browser";
 import { getUserProfile } from "@/lib/db/queries";
 import { mateSafetyConsentLabel, mateSafetyPolicy } from "@/data/policies";
 import {

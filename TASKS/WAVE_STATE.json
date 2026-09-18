@@ -102,7 +102,7 @@
         "CMP-SCR003-TIPS-SAFETY-CTA",
         "PO-SCR-003"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -376,8 +376,8 @@
     },
     "PO-SCR-003": {
       "wave": "W07",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T22:00:05+09:00"
     },
     "CMP-SCR004-DETAIL-PANEL": {
       "wave": "W08",
@@ -509,5 +509,6 @@
       "status": "PENDING",
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
-  }
+  },
+  "updated_at": "2026-09-18T22:00:05+09:00"
 }

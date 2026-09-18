@@ -112,7 +112,8 @@ test.describe("E2E-005 비로그인 동행글 작성 — 로그인 안내", () =
     await expect(loginNotice).toBeVisible();
     await expect(loginNotice).toContainText("로그인");
 
-    const loginLink = page.getByRole("link", { name: /로그인/ });
+    // 헤더·푸터에도 로그인 링크가 있으므로 안내 영역 안의 링크로 좁힌다.
+    const loginLink = loginNotice.getByRole("link", { name: /로그인/ });
     await expect(loginLink).toHaveAttribute("href", "/account");
   });
 });
