@@ -122,14 +122,13 @@ function DrawerBody({ destinationId }: { destinationId: string | null }) {
           className="h-48 w-full rounded-[14px] object-cover"
         />
         <p className="text-[13px] text-[#84878D]">
-          출처:{" "}
           <a
             href={destination.image.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
           >
-            {destination.image.sourceUrl}
+            {destination.image.credit}
           </a>
         </p>
 

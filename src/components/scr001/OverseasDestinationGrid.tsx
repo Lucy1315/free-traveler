@@ -188,6 +188,7 @@ export default function OverseasDestinationGrid({
                 <img
                   src={destination.image.url}
                   alt={destination.image.alt}
+                  title={destination.image.credit}
                   className="h-full w-full object-cover"
                 />
                 <span

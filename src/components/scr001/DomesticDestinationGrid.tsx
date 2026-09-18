@@ -189,6 +189,7 @@ export default function DomesticDestinationGrid({
                 <img
                   src={destination.image.url}
                   alt={destination.image.alt}
+                  title={destination.image.credit}
                   className="h-full w-full object-cover"
                 />
                 <span

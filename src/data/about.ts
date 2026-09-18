@@ -18,6 +18,7 @@ export interface AboutImage {
   url: string;
   alt: string;
   sourceUrl: string;
+  credit: string; // 저작자·라이선스 표기(CC BY/BY-SA 조건)
 }
 
 export interface AboutRecommendedDestination {
@@ -78,10 +79,11 @@ export const aboutProfile: AboutProfile = {
     tagline:
       "가볍게 떠나 오래 기억할 여행을 기록하고, 그 경험을 다음 여행자와 나눕니다.",
     image: {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Mountaineering_Man_Trail_Path_Mountains.jpg/1280px-Mountaineering_Man_Trail_Path_Mountains.jpg",
+      url: "/images/about/hero.jpg",
       alt: "배낭을 메고 산길을 걷는 여행자의 뒷모습",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Mountaineering_Man_Trail_Path_Mountains.jpg",
+      credit: "사진: Hermann · CC0 (Wikimedia Commons)",
     },
     stats: [
       { label: "Trips", value: "50+ Trips" },
@@ -98,10 +100,11 @@ export const aboutProfile: AboutProfile = {
       country: "대한민국",
       summary: "오름과 해안도로를 따라 걷기 좋은 사계절 여행지입니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Jejuolle-route-10%282%29.jpg/960px-Jejuolle-route-10%282%29.jpg",
+        url: "/images/places/jeju.jpg",
         alt: "제주 산방산과 유채꽃밭 풍경",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:Jejuolle-route-10(2).jpg",
+        credit: "사진: Jeju Olle Foundation · CC BY-SA 4.0 (Wikimedia Commons)",
       },
     },
     {
@@ -110,10 +113,11 @@ export const aboutProfile: AboutProfile = {
       country: "대한민국",
       summary: "해운대와 감천문화마을을 한 번에 즐기는 바다 도시입니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg/960px-Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
+        url: "/images/places/busan.jpg",
         alt: "부산 감천문화마을의 알록달록한 집들",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
+        credit: "사진: Basile Morin · CC BY-SA 4.0 (Wikimedia Commons)",
       },
     },
     {
@@ -122,10 +126,11 @@ export const aboutProfile: AboutProfile = {
       country: "베트남",
       summary: "미케비치와 바나힐을 함께 묶어 3박 4일로 다녀오기 좋습니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/My_Khe_Beach_Danang_Coastline.jpg/960px-My_Khe_Beach_Danang_Coastline.jpg",
+        url: "/images/places/danang.jpg",
         alt: "다낭 미케비치 해안선",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:My_Khe_Beach_Danang_Coastline.jpg",
+        credit: "사진: Jpatokal · CC BY-SA 4.0 (Wikimedia Commons)",
       },
     },
     {
@@ -134,10 +139,11 @@ export const aboutProfile: AboutProfile = {
       country: "일본",
       summary: "도톤보리 야경과 간사이 근교 당일치기 코스로 유명합니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Osaka_Dotonbori_yoru.jpg/960px-Osaka_Dotonbori_yoru.jpg",
+        url: "/images/places/osaka.jpg",
         alt: "오사카 도톤보리 야경",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_yoru.jpg",
+        credit: "사진: Sakai Yayoi · CC0 (Wikimedia Commons)",
       },
     },
     {
@@ -146,10 +152,11 @@ export const aboutProfile: AboutProfile = {
       country: "태국",
       summary: "사원 투어와 야시장을 함께 즐기는 동남아 대표 도시입니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg/960px-Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg",
+        url: "/images/places/bangkok.jpg",
         alt: "방콕 왓아룬 사원 야경",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_37.jpg",
+        credit: "사진: Diego Delso · CC BY-SA 3.0 (Wikimedia Commons)",
       },
     },
     {
@@ -158,10 +165,11 @@ export const aboutProfile: AboutProfile = {
       country: "프랑스",
       summary: "미술관과 골목 카페를 여유롭게 도보로 둘러보기 좋습니다.",
       image: {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/960px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+        url: "/images/places/paris.jpg",
         alt: "파리 에펠탑과 센 강변 야경",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+        credit: "사진: Getfunky Paris · CC BY 2.0 (Wikimedia Commons)",
       },
     },
   ],
@@ -233,58 +241,66 @@ export const aboutProfile: AboutProfile = {
   // 사진 Gallery 8장(캡션·촬영 국가 병기).
   gallery: [
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Le_Gan_Chenpo_%28Himalaya%2C_N%C3%A9pal%29_%288446635289%29.jpg/960px-Le_Gan_Chenpo_%28Himalaya%2C_N%C3%A9pal%29_%288446635289%29.jpg",
+      url: "/images/about/nepal.jpg",
       alt: "히말라야 설산과 숲 풍경",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg",
+      credit: "사진: Jean-Pierre Dalbéra · CC BY 2.0 (Wikimedia Commons)",
       country: "네팔",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/A_well-known_coffee_terrace_%2846610470381%29.jpg/960px-A_well-known_coffee_terrace_%2846610470381%29.jpg",
+      url: "/images/about/france.jpg",
       alt: "파리 카페 테라스에 앉은 사람들",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:A_well-known_coffee_terrace_(46610470381).jpg",
+      credit: "사진: madras91 · CC BY 2.0 (Wikimedia Commons)",
       country: "프랑스",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Ta_Prohm_%28I%29.jpg/960px-Ta_Prohm_%28I%29.jpg",
+      url: "/images/about/cambodia.jpg",
       alt: "나무뿌리에 뒤덮인 타프롬 사원 유적",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ta_Prohm_(I).jpg",
+      credit: "사진: Supanut Arunoprayote · CC BY 4.0 (Wikimedia Commons)",
       country: "캄보디아",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg/960px-Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg",
+      url: "/images/about/thai.jpg",
       alt: "해질녘 야자수가 드리운 태국 코막 섬 해변",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Sunset_on_the_beach_with_palms.jpg",
+      credit: "사진: Vyacheslav Argenberg · CC BY 4.0 (Wikimedia Commons)",
       country: "태국",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg/960px-CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
+      url: "/images/about/swiss.jpg",
       alt: "마터호른이 비치는 알프스 호수",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
+      credit: "사진: Roy Egloff · CC BY-SA 4.0 (Wikimedia Commons)",
       country: "스위스",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg/960px-TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg",
+      url: "/images/about/taiwan.jpg",
       alt: "타이베이 스린 야시장 거리 풍경",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg",
+      credit: "사진: Hauskyg YWICAORP · CC0 (Wikimedia Commons)",
       country: "대만",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Brooklyn_Bridge%2C_Manhattan_at_night_3.jpg/960px-Brooklyn_Bridge%2C_Manhattan_at_night_3.jpg",
+      url: "/images/about/usa.jpg",
       alt: "브루클린 브리지와 맨해튼 야경",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge,_Manhattan_at_night_3.jpg",
+      credit: "사진: Rhododendrites · CC BY-SA 4.0 (Wikimedia Commons)",
       country: "미국",
     },
     {
-      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Marokko_W%C3%BCste_01.JPG/960px-Marokko_W%C3%BCste_01.JPG",
+      url: "/images/about/morocco.jpg",
       alt: "모로코 사하라 사막 모래언덕",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Marokko_W%C3%BCste_01.JPG",
+      credit: "사진: Joadl · CC BY-SA 3.0 at (Wikimedia Commons)",
       country: "모로코",
     },
   ],

@@ -57,6 +57,9 @@ export default function RecommendedGrid() {
               <p className="mt-2 text-[14px] leading-[1.55] text-[#4B4E54]">
                 {item.summary}
               </p>
+              <p className="mt-2 text-[13px] text-[#84878D]">
+                {item.image.credit}
+              </p>
             </div>
           </Link>
         ))}

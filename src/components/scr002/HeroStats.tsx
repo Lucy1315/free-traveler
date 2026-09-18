@@ -49,14 +49,13 @@ export default function HeroStats() {
         </div>
 
         <p className="text-[13px] text-[#FFFFFF]">
-          출처:{" "}
           <a
             href={hero.image.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
           >
-            {hero.image.sourceUrl}
+            {hero.image.credit}
           </a>
         </p>
       </div>

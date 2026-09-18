@@ -1,6 +1,6 @@
 // 사진 Gallery(정확히 8장, 캡션+촬영 국가). SCR-002(`/about`).
 // design-reference/D-001/DESIGN.md §16(Gallery 본문 유형), UI_CONTRACT.md
-// 2장 기준. REQ-FUNC-061(축소: alt·출처 URL만).
+// 2장 기준. REQ-FUNC-061(축소: alt·출처 URL + 저작자·라이선스 표기).
 
 import { aboutProfile } from "@/data/about";
 
@@ -26,14 +26,14 @@ export default function Gallery() {
               className="aspect-square w-full object-cover"
             />
             <figcaption className="mt-1 text-[13px] text-[#84878D]">
-              {photo.country} ·{" "}
+              {photo.country}
               <a
                 href={photo.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="mt-1 block underline"
               >
-                출처
+                {photo.credit}
               </a>
             </figcaption>
           </figure>
