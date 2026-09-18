@@ -12,7 +12,12 @@ import { domesticDestinations } from "@/data/destinations.domestic";
 import type { DomesticDestination } from "@/data/destinations.domestic";
 import { overseasDestinations } from "@/data/destinations.overseas";
 import type { OverseasDestination } from "@/data/destinations.overseas";
-import { countrySafetyList, isSafetyStale } from "@/data/safety";
+import {
+  countrySafetyList,
+  isSafetyStale,
+  isSevereAlertLevel,
+  type SafetyAlertLevel,
+} from "@/data/safety";
 import { openExternalLink } from "@/lib/externalLink";
 
 type AnyDestination = DomesticDestination | OverseasDestination;
@@ -25,6 +30,13 @@ const ALL_DESTINATIONS: AnyDestination[] = [
 // 외교부 해외안전여행은 관리자가 설정하는 항공/숙소 URL과 달리 고정된
 // 공식 도메인이라, allowlist를 여기서 직접 지정한다(REQ-FUNC-049).
 const MOFA_ALLOWLIST = ["0404.go.kr"];
+
+// D-001 §13: 색상만으로 구분하지 않고 단계 이름을 텍스트로 함께 쓴다.
+function alertBadgeVariant(level: SafetyAlertLevel) {
+  if (level === "해당없음") return "neutral" as const;
+  if (isSevereAlertLevel(level)) return "error" as const;
+  return level === "여행자제" ? ("warning" as const) : ("info" as const);
+}
 
 function getDestinationCountry(destination: AnyDestination): string {
   return destination.scope === "domestic" ? "대한민국" : destination.country;
@@ -252,25 +264,42 @@ function DrawerBody({ destinationId }: { destinationId: string | null }) {
 
         {safety ? (
           <>
-            <div>
-              <div className="flex items-center gap-2">
-                <Badge
-                  variant={
-                    safety.alert.level === "해당없음" ? "neutral" : "warning"
-                  }
-                >
-                  {safety.alert.level} · {safety.alert.scopeType}
-                </Badge>
-                {isSafetyStale(safety.source.verifiedAt) && (
+            {/* REQ-FUNC-051·052: 발령 중인 경보를 높은 단계부터 모두 텍스트로
+                보여주고, 국가 전체/특정 지역 범위를 구분한다. */}
+            <div className="flex flex-col gap-3">
+              {isSafetyStale(safety.source.verifiedAt) && (
+                <div>
                   <Badge variant="warning">재확인 필요</Badge>
-                )}
-              </div>
-              <p className="mt-2 text-[14px] text-[#4B4E54]">
-                {safety.alert.scopeText}
-              </p>
-              <p className="mt-1 text-[14px] text-[#4B4E54]">
-                {safety.alert.summary}
-              </p>
+                  <p className="mt-1 text-[13px] text-[#4B4E54]">
+                    마지막 확인 후 7일이 지났습니다. 아래 원문에서 최신 경보를
+                    확인하세요.
+                  </p>
+                </div>
+              )}
+              <ul className="flex flex-col gap-3" aria-label="여행경보">
+                {safety.alerts.map((alert) => (
+                  <li
+                    key={`${alert.level}-${alert.scopeText}`}
+                    className={`rounded-[14px] border p-3 ${
+                      isSevereAlertLevel(alert.level)
+                        ? "border-2 border-[#C7284B]"
+                        : "border-[#E3E2DF]"
+                    }`}
+                  >
+                    <Badge variant={alertBadgeVariant(alert.level)}>
+                      {alert.level === "해당없음"
+                        ? "여행경보 없음"
+                        : `${alert.level} · ${alert.scopeType}`}
+                    </Badge>
+                    <p className="mt-2 text-[14px] font-medium text-[#26282C]">
+                      {alert.scopeText}
+                    </p>
+                    <p className="mt-1 text-[14px] leading-[1.55] text-[#4B4E54]">
+                      {alert.summary}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {safety.categories.map((category) => (

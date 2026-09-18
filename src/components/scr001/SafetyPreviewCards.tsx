@@ -11,7 +11,11 @@
 "use client";
 
 import Badge from "@/components/ui/Badge";
-import { countrySafetyList, isSafetyStale } from "@/data/safety";
+import {
+  countrySafetyList,
+  isSafetyStale,
+  isSevereAlertLevel,
+} from "@/data/safety";
 
 export interface SafetyPreviewCardsProps {
   onSelectCountry: (country: string) => void;
@@ -43,8 +47,17 @@ export default function SafetyPreviewCards({
             >
               {/* REQ-FUNC-051: 중대 경보는 카드 상단에 텍스트로 표시한다. */}
               {hasAlert && (
-                <p className="text-[13px] font-semibold text-[#B8720B]">
+                <p
+                  className={`text-[13px] font-semibold ${
+                    isSevereAlertLevel(safety.alert.level)
+                      ? "text-[#C7284B]"
+                      : "text-[#B8720B]"
+                  }`}
+                >
                   {safety.alert.level} · {safety.alert.scopeType}
+                  {safety.alerts.length > 1
+                    ? ` 외 ${safety.alerts.length - 1}건`
+                    : ""}
                 </p>
               )}
               <p className="mt-1 text-[17px] font-semibold text-[#26282C]">
