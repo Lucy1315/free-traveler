@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-17T20:21:24+09:00",
-  "current_wave": "W09",
+  "current_wave": "W10",
   "waves": [
     {
       "wave_id": "W01",
@@ -135,7 +135,7 @@
       ],
       "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "PROCEEDED_BY_USER — 사용자 지시로 다음 Wave 진행(2026-09-19). Supabase 마이그레이션 미적용으로 /account 회원 기능(프로필·내 글 등)은 Preview에서 미확인."
     },
     {
       "wave_id": "W10",
@@ -148,7 +148,7 @@
         "MANUAL-CHECK-A11Y-KEYBOARD",
         "MANUAL-CHECK-EXTERNAL-LINKS"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-19T00:23:32+09:00"
+  "updated_at": "2026-09-19T00:24:25+09:00"
 }
