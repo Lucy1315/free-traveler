@@ -1,8 +1,9 @@
 // SCR-001 메인 화면의 인터랙티브 본문(PO-SCR-001 조립 결과).
 // design-reference/D-001/DESIGN.md §16(Section 계층)·§17, UI_CONTRACT.md 1장.
 // Section 순서는 PO-SCR-001 Functional AC를 따른다(Hero → 국내 → 해외 →
-// 테마 Chip → 안전정보 → 최근 동행글) — D-001 §17의 순서(Hero → 테마 Chip
-// → 국내/해외 탭)와 다르다(두 문서 사이의 불일치, Task AC를 우선했다).
+// 테마 Chip → 안전정보 → 최근 동행글 → CTA Banner → 3단계 안내). 앞부분은
+// D-001 §17의 순서(Hero → 테마 Chip → 국내/해외 탭)와 다르다(두 문서 사이의
+// 불일치, Task AC를 우선했다). 마지막 두 영역은 D-001 §17 6·7번이다.
 //
 // 카드 클릭 콜백·Drawer 제어 때문에 Client Component다. 라우트 파일
 // src/app/page.tsx는 이 컴포넌트를 렌더링하는 Server Component로 두고
@@ -19,6 +20,8 @@ import OverseasDestinationGrid from "@/components/scr001/OverseasDestinationGrid
 import ThemeChips from "@/components/scr001/ThemeChips";
 import SafetyPreviewCards from "@/components/scr001/SafetyPreviewCards";
 import RecentMateCards from "@/components/scr001/RecentMateCards";
+import CtaBanner from "@/components/scr001/CtaBanner";
+import ThreeStepGuide from "@/components/scr001/ThreeStepGuide";
 import DestinationDetailDrawer from "@/components/scr001/DestinationDetailDrawer";
 import { overseasDestinations } from "@/data/destinations.overseas";
 
@@ -116,6 +119,12 @@ export default function HomePage() {
         <SafetyPreviewCards onSelectCountry={handleSelectCountry} />
 
         <RecentMateCards />
+      </div>
+
+      {/* D-001 §17 SCR-001 6번(CTA Banner, 풀폭 밴드)·7번(3단계 안내). */}
+      <CtaBanner />
+      <div className="mx-auto w-full max-w-[1280px] px-4 py-12 md:px-8 md:py-20">
+        <ThreeStepGuide />
       </div>
 
       <Suspense fallback={null}>

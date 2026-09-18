@@ -94,11 +94,12 @@ Impl. Status = **IMPLEMENT**(`docs/PROJECT_SCOPE.md`·`docs/06_SRS_UIUX_REVISED.
 
 ## Expected Files
 - 기존 수정: `src/app/page.tsx`(현재 `create-next-app` 스타터 마크업 — **전량 제거 후 재작성**)
+- 추가(2026-09-18, 사용자 승인 후속 수정): `src/components/scr001/HomePage.tsx`(메인 본문 — `page.tsx`가 metadata를 내보내려면 Server Component여야 해서 인터랙티브 본문을 분리), `src/components/scr001/CtaBanner.tsx`·`src/components/scr001/ThreeStepGuide.tsx`(D-001 §17 SCR-001 6·7번 영역 — 최초 AC 목록에서 누락돼 E2E-001이 실패하던 부분)
 
 (Expected Files 밖의 파일은 이 Task 범위에서 수정하지 않는다.)
 
 ## Functional AC
-- **Next.js Starter 완전 제거**(로고·"Get started"·기본 링크 잔존 금지). Section 순서 고정: Hero → 국내 여행지 카드 6개 이상 → 해외 여행지 카드 6개 이상 → 여행 동기 Chip 6개 이상 → 국가별 주의사항 카드 6개 → 최근 동행글 카드 3개(또는 완성형 Empty). 각 Section 데이터 출처: Hero=검색 입력, 국내/해외=DATA-DESTINATIONS-*, 여행동기=ThemeChips 정적 목록, 안전=DATA-COUNTRY-SAFETY, 최근 동행글=API-MATES-ROUTES
+- **Next.js Starter 완전 제거**(로고·"Get started"·기본 링크 잔존 금지). Section 순서 고정: Hero → 국내 여행지 카드 6개 이상 → 해외 여행지 카드 6개 이상 → 여행 동기 Chip 6개 이상 → 국가별 주의사항 카드 6개 → 최근 동행글 카드 3개(또는 완성형 Empty) → CTA Banner("여행 준비 시작하기" → `/travel-tools`, 풀폭 밴드) → 3단계 안내(정확히 3단계: 여행지 탐색 → 조건 정리·동행 찾기 → 연결). 각 Section 데이터 출처: Hero=검색 입력, 국내/해외=DATA-DESTINATIONS-*, 여행동기=ThemeChips 정적 목록, 안전=DATA-COUNTRY-SAFETY, 최근 동행글=API-MATES-ROUTES, CTA·3단계 안내=정적 문구(UI_CONTRACT 1장)
 
 ## Visual AC
 - Desktop 콘텐츠 1200~1280px, Section 여백 64~96px(Mobile 40~64px), Mobile 1열, 44px 터치 영역
@@ -108,7 +109,7 @@ Impl. Status = **IMPLEMENT**(`docs/PROJECT_SCOPE.md`·`docs/06_SRS_UIUX_REVISED.
 - `Lorem ipsum`/"준비 중"/"정보 확인 필요"/빈 카드 금지, 데이터 0건 섹션은 안내 문장+이용 방법+CTA를 갖춘 완성형 Empty만 허용
 
 ## Test Cases
-- TC-1(Functional): **Next.js Starter 완전 제거**(로고·"Get started"·기본 링크 잔존 금지). Section 순서 고정: Hero → 국내 여행지 카드 6개 이상 → 해외 여행지 카드 6개 이상 → 여행 동기 Chip 6개 이상 → 국가별 주의사항 카드 6개 → 최근 동행글 카드 3개(또는 완성형 Empty). 각 Section 데이터 출처: Hero=검색 입력, 국내/해외=DATA-DESTINATIONS-*, 여행동기=ThemeChips 정적 목록, 안전=DATA-COUNTRY-SAFETY, 최근 동행글=API-MATES-ROUTES
+- TC-1(Functional): **Next.js Starter 완전 제거**(로고·"Get started"·기본 링크 잔존 금지). Section 순서 고정: Hero → 국내 여행지 카드 6개 이상 → 해외 여행지 카드 6개 이상 → 여행 동기 Chip 6개 이상 → 국가별 주의사항 카드 6개 → 최근 동행글 카드 3개(또는 완성형 Empty) → CTA Banner("여행 준비 시작하기" → `/travel-tools`, 풀폭 밴드) → 3단계 안내(정확히 3단계: 여행지 탐색 → 조건 정리·동행 찾기 → 연결). 각 Section 데이터 출처: Hero=검색 입력, 국내/해외=DATA-DESTINATIONS-*, 여행동기=ThemeChips 정적 목록, 안전=DATA-COUNTRY-SAFETY, 최근 동행글=API-MATES-ROUTES, CTA·3단계 안내=정적 문구(UI_CONTRACT 1장)
 - TC-2(Visual): Desktop 콘텐츠 1200~1280px, Section 여백 64~96px(Mobile 40~64px), Mobile 1열, 44px 터치 영역
 - TC-3(Security/Privacy): `Lorem ipsum`/"준비 중"/"정보 확인 필요"/빈 카드 금지, 데이터 0건 섹션은 안내 문장+이용 방법+CTA를 갖춘 완성형 Empty만 허용
 - TC-4(Verify 연동): E2E-PUBLIC-SMOKE, MANUAL-CHECK-RESPONSIVE로 위 시나리오를 실행해 통과를 확인한다.
@@ -124,7 +125,7 @@ Impl. Status = **IMPLEMENT**(`docs/PROJECT_SCOPE.md`·`docs/06_SRS_UIUX_REVISED.
 - [ ] Next.js Starter 기본 마크업(로고·"Get started"·기본 링크)이 완전히 제거됐다.
 
 ## Forbidden
-- 새 Component 파일을 직접 만들지 않는다 — 이 Task는 Depends On의 CMP-* Task 산출물을 Route Page로 조립하는 범위로 한정한다.
+- 새 Component 파일을 직접 만들지 않는다 — 이 Task는 Depends On의 CMP-* Task 산출물을 Route Page로 조립하는 범위로 한정한다. (예외: Expected Files의 2026-09-18 추가 항목 3개는 사용자가 명시적으로 승인해 만들었다.)
 - Expected Files 절에 나열되지 않은 파일은 신규 생성·수정하지 않는다(범위 밖 수정 금지).
 - Airbnb 상표 요소, 예약·결제·가격·별점·광고 UI를 만들지 않는다(D-001 §19 Do Not).
 - 이 문서(D-001/DESIGN.md)에 없는 임의의 색상·radius·spacing 값을 새로 만들지 않는다.
