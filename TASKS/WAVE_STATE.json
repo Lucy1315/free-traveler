@@ -451,8 +451,9 @@
     },
     "E2E-MATE-AUTH": {
       "wave": "W10",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:29:07+09:00",
+      "note": "spec 작성 완료, 실행 미검증 — 테스트 계정 2개(E2E_AUTHOR_*, E2E_TEST_USER_*)와 Supabase 마이그레이션 적용 필요. 로컬 실행 시 4건 skip."
     },
     "E2E-PUBLIC-SMOKE": {
       "wave": "W10",
