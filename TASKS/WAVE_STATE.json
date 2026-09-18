@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-17T20:21:24+09:00",
-  "current_wave": "W07",
+  "current_wave": "W08",
   "waves": [
     {
       "wave_id": "W01",
@@ -104,7 +104,7 @@
       ],
       "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "PASSED — 사용자가 Vercel Preview에서 /travel-tools 3탭·외부 이동·로그인 안내와 교체된 여행지 이미지·저작자 표기를 확인 후 진행 승인(2026-09-18)"
     },
     {
       "wave_id": "W08",
@@ -118,7 +118,7 @@
         "CMP-SCR004-REPORT-BLOCK-ACTIONS",
         "PO-SCR-004"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-18T22:00:05+09:00"
+  "updated_at": "2026-09-18T22:32:22+09:00"
 }
