@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-17T20:21:24+09:00",
-  "current_wave": "W08",
+  "current_wave": "W09",
   "waves": [
     {
       "wave_id": "W01",
@@ -120,7 +120,7 @@
       ],
       "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "PROCEEDED_BY_USER — 사용자 지시로 다음 Wave 진행(2026-09-19). Supabase 마이그레이션 미적용으로 /mates 실데이터는 Preview에서 미확인(오류+재시도 상태). 마이그레이션 적용 후 재확인 필요."
     },
     {
       "wave_id": "W09",
@@ -133,7 +133,7 @@
         "CMP-SCR005-PROFILE",
         "PO-SCR-005"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-18T22:43:21+09:00"
+  "updated_at": "2026-09-19T00:14:13+09:00"
 }
