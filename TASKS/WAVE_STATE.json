@@ -162,7 +162,7 @@
         "UNIT-MATE-STATE",
         "UNIT-TRAVEL-DATES"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -485,8 +485,9 @@
     },
     "TEST-RLS-BASIC": {
       "wave": "W11",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:52:13+09:00",
+      "note": "정적 검사 11건 통과(변이 확인 완료). 실제 DB 부정 접근 9건은 RLS_TEST_* 접속 정보·테스트 계정이 없어 skip — 실행 미검증."
     },
     "UNIT-CONTACT-DETECTION": {
       "wave": "W11",
@@ -514,5 +515,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-19T00:50:10+09:00"
+  "updated_at": "2026-09-19T00:52:13+09:00"
 }

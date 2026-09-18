@@ -13,10 +13,18 @@ grant select on mate_post, external_url_setting to anon;
 -- 로그인 사용자: RLS 정책 범위 안에서 읽기·쓰기.
 grant select, insert, update, delete on
   mate_post,
-  mate_application,
   user_block,
   external_url_setting
 to authenticated;
+
+-- mate_application: RLS insert_self는 "본인 요청"만 확인하고 status 열은 가리지
+-- 않아, 신청자가 처음부터 status='ACCEPTED'로 넣어 스스로 승인할 수 있다.
+-- 신청은 status를 뺀 열만(기본값 PENDING), 수정은 status 열만 허용한다
+-- (누가 수정할 수 있는지는 RLS update_by_post_author가 계속 제한한다).
+revoke insert, update on mate_application from anon, authenticated;
+grant select, delete on mate_application to authenticated;
+grant insert (post_id, applicant_id, message) on mate_application to authenticated;
+grant update (status) on mate_application to authenticated;
 
 -- user_profile: RLS(update_self·insert_self)는 "본인 행"만 보장하고 열은 가리지
 -- 않는다. role 열까지 열어 두면 본인이 role을 'admin'으로 바꿔 관리자 권한을
