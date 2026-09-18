@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-17T20:21:24+09:00",
-  "current_wave": "W01",
+  "current_wave": "W07",
   "waves": [
     {
       "wave_id": "W01",
@@ -89,7 +89,7 @@
       ],
       "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "PASSED — 사용자가 Vercel Preview에서 /about·추천 카드 딥링크·메인 CTA·페이지 제목을 확인 후 진행 승인(2026-09-18)"
     },
     {
       "wave_id": "W07",
