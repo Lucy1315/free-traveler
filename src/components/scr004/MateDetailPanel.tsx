@@ -14,7 +14,6 @@ import { useState, useSyncExternalStore } from "react";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Badge from "@/components/ui/Badge";
-import Chip from "@/components/ui/Chip";
 import Drawer from "@/components/ui/Drawer";
 import type { MatePostRow, MatePostStatus } from "@/lib/db/queries";
 import { shareUrl } from "@/lib/share";
@@ -107,7 +106,7 @@ function MateDetailContent({
   }
 
   return (
-    <article data-testid="mate-detail" className="flex flex-col gap-6">
+    <article data-testid="mate-detail-panel" className="flex flex-col gap-6">
       <header className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant={isRecruiting ? "success" : "neutral"}>
@@ -147,8 +146,11 @@ function MateDetailContent({
       {post.travel_style.length > 0 && (
         <ul className="flex flex-wrap gap-2" aria-label="여행 스타일">
           {post.travel_style.map((style) => (
-            <li key={style}>
-              <Chip>{style}</Chip>
+            <li
+              key={style}
+              className="rounded-full bg-[#F0EFEC] px-3 py-1 text-[13px] font-medium text-[#26282C]"
+            >
+              {style}
             </li>
           ))}
         </ul>

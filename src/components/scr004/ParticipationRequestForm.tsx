@@ -39,9 +39,9 @@ type ViewerState =
   | { kind: "ready" };
 
 const APPLICATION_STATUS_LABEL: Record<MateApplicationStatus, string> = {
-  PENDING: "요청 검토 중",
-  ACCEPTED: "참가 승인됨",
-  REJECTED: "참가 거절됨",
+  PENDING: "검토 중 (PENDING)",
+  ACCEPTED: "승인됨 (ACCEPTED)",
+  REJECTED: "거절됨 (REJECTED)",
 };
 
 const noticeClass =
@@ -212,7 +212,11 @@ export default function ParticipationRequestForm({
     );
   } else if (viewer.kind === "applied") {
     content = (
-      <div role="status" className={noticeClass}>
+      <div
+        role="status"
+        data-testid="participation-request-status"
+        className={noticeClass}
+      >
         <Badge variant={viewer.status === "ACCEPTED" ? "success" : "info"}>
           {APPLICATION_STATUS_LABEL[viewer.status]}
         </Badge>
@@ -240,6 +244,7 @@ export default function ParticipationRequestForm({
         </label>
         <textarea
           id={`${fieldId}-message`}
+          data-testid="participation-request-message"
           value={message}
           onChange={(event) => setMessage(event.target.value)}
           rows={5}
