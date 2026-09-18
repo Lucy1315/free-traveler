@@ -102,7 +102,7 @@
         "CMP-SCR003-TIPS-SAFETY-CTA",
         "PO-SCR-003"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -351,8 +351,8 @@
     },
     "CMP-SCR003-INTRO-TABS-SHELL": {
       "wave": "W07",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T07:10:00+09:00"
     },
     "CMP-SCR003-FLIGHT-FORM": {
       "wave": "W07",
