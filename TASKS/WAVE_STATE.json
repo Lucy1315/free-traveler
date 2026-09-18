@@ -381,8 +381,8 @@
     },
     "CMP-SCR004-DETAIL-PANEL": {
       "wave": "W08",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T22:34:04+09:00"
     },
     "CMP-SCR004-FILTER-SUMMARY": {
       "wave": "W08",
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-18T22:32:22+09:00"
+  "updated_at": "2026-09-18T22:34:04+09:00"
 }
