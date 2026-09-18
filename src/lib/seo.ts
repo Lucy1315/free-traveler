@@ -5,13 +5,25 @@
 import type { Metadata } from "next";
 
 const SITE_NAME = "Free Traveler";
-// TODO: Vercel 배포 도메인이 확정되면 NEXT_PUBLIC_SITE_URL 환경변수로 덮어쓴다.
-// 값이 없으면 이 기본값을 쓴다(빌드 실패를 막기 위함이며 실제 배포 URL은 아니다).
-const DEFAULT_SITE_URL = "https://free-traveler.vercel.app";
+// 사이트 주소 결정 순서:
+// 1) NEXT_PUBLIC_SITE_URL(직접 지정한 도메인)
+// 2) VERCEL_PROJECT_PRODUCTION_URL(Vercel이 빌드 때 자동으로 넣는 이 프로젝트의
+//    프로덕션 도메인, 프로토콜 없음)
+// 3) 로컬 개발 주소
+// 남의 도메인을 기본값으로 두지 않는다 — 이전 기본값 free-traveler.vercel.app은
+// 이 프로젝트가 아닌 다른 사이트였고, canonical·Open Graph가 그쪽을 가리켰다.
+const LOCAL_SITE_URL = "http://localhost:3000";
 
 export function getSiteUrl(): string {
   const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  return configured && configured.length > 0 ? configured : DEFAULT_SITE_URL;
+  if (configured) {
+    return configured;
+  }
+  const vercelHost = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (vercelHost) {
+    return `https://${vercelHost}`;
+  }
+  return LOCAL_SITE_URL;
 }
 
 function toAbsoluteUrl(path: string): string {
