@@ -391,8 +391,8 @@
     },
     "CMP-SCR004-CARD-GRID": {
       "wave": "W08",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T22:36:22+09:00"
     },
     "CMP-SCR004-INTRO-CTA": {
       "wave": "W08",
@@ -510,5 +510,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-18T22:35:20+09:00"
+  "updated_at": "2026-09-18T22:36:22+09:00"
 }
