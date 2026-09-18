@@ -87,7 +87,7 @@
         "CMP-SCR002-TIMELINE",
         "PO-SCR-002"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -346,8 +346,8 @@
     },
     "PO-SCR-002": {
       "wave": "W06",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T06:45:00+09:00"
     },
     "CMP-SCR003-INTRO-TABS-SHELL": {
       "wave": "W07",
