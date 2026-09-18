@@ -24,9 +24,27 @@ import {
   listExternalUrlSettings,
   type ExternalUrlCategory,
 } from "@/lib/db/queries";
+import { buildPageMetadata, buildWebPageJsonLd } from "@/lib/seo";
 
 // 관리자 설정 변경이 5분 안에 반영되도록 정적 페이지를 주기적으로 재생성한다.
 export const revalidate = 300;
+
+const TITLE = "대표 소개";
+const DESCRIPTION =
+  "50회 이상, 30개국 이상을 여행한 free_traveler의 추천 여행지·여행 기록·여행 철학을 소개합니다.";
+
+// REQ-FUNC-070·NF-030: 페이지별 title·description·canonical·OG·구조화 데이터.
+export const metadata = buildPageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/about",
+});
+
+const jsonLd = buildWebPageJsonLd({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/about",
+});
 
 const CONTACT_LABELS: Partial<Record<ExternalUrlCategory, string>> = {
   contact: "문의하기",
@@ -61,6 +79,12 @@ export default async function AboutPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <HeroStats />
 
       <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-12 px-4 py-12 md:gap-20 md:px-8 md:py-20">
