@@ -291,8 +291,8 @@
     },
     "CMP-SCR001-OVERSEAS-DEST-CARDS": {
       "wave": "W04",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-18T03:25:00+09:00"
     },
     "CMP-SCR001-RECENT-MATE-CARDS": {
       "wave": "W05",
