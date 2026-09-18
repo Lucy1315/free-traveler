@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: lts/*
           cache: npm
@@ -36,6 +36,12 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      # Next.js 16의 전역 라우트 타입(LayoutProps·PageProps 등)은 .next/types에
+      # 생성된다. 로컬에는 이전 빌드 산출물이 남아 있어 통과하지만 CI의 깨끗한
+      # 체크아웃에는 없으므로, 타입 검사 전에 먼저 생성한다.
+      - name: Generate Next.js route types
+        run: npx next typegen
 
       - name: Typecheck
         run: npm run typecheck
@@ -61,10 +67,10 @@ jobs:
     # 가능해야 하고, 인증 Smoke를 병합의 필수 Gate로 삼지 않는다.
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: lts/*
           cache: npm
