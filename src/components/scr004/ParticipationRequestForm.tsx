@@ -252,7 +252,7 @@ export default function ParticipationRequestForm({
           aria-invalid={showError}
           aria-describedby={`${fieldId}-hint${showError ? ` ${fieldId}-error` : ""}`}
           placeholder="간단한 자기소개와 함께하고 싶은 일정을 적어 주세요."
-          className={`w-full rounded-[8px] border bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${showError ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
+          className={`w-full rounded-[8px] border bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${showError ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
         />
         <p
           id={`${fieldId}-hint`}

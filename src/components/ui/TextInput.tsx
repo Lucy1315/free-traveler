@@ -44,7 +44,7 @@ export default function TextInput({
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
         {...rest}
-        className={`h-12 rounded-[8px] border bg-[#FFFFFF] px-3 py-3.5 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${
+        className={`h-12 rounded-[8px] border bg-[#FFFFFF] px-3 py-3.5 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${
           error ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"
         }`}
       />

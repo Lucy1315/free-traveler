@@ -76,7 +76,7 @@ export default function RecentMateCards() {
         </div>
         <Link
           href="/mates"
-          className="text-[14px] font-semibold text-[#26282C] underline"
+          className="inline-flex min-h-[44px] items-center text-[14px] font-semibold text-[#26282C] underline"
         >
           동행 찾기 전체 보기
         </Link>

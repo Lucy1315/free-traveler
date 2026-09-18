@@ -31,7 +31,7 @@ export default function Gallery() {
                 href={photo.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block underline"
+                className="flex min-h-[44px] items-center underline"
               >
                 {photo.credit}
               </a>

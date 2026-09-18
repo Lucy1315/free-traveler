@@ -159,7 +159,7 @@ function ReportCard({
             id={`${fieldId}-status`}
             value={nextStatus}
             onChange={(event) => setNextStatus(event.target.value)}
-            className="h-12 rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
+            className="h-12 rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
           >
             <option value="">조치를 고르세요</option>
             {UPDATABLE_STATUSES.map((status) => (
@@ -420,7 +420,7 @@ function UrlSettingRow({
           }}
           aria-invalid={invalid}
           aria-describedby={`${fieldId}-hint`}
-          className={`h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${invalid ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
+          className={`h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${invalid ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
         />
         <Button variant="secondary" onClick={save} disabled={saving}>
           {saving ? "저장 중…" : "저장"}

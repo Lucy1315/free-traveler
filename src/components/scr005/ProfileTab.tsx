@@ -143,7 +143,7 @@ function ProfileForm({
   }
 
   const selectClass =
-    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
+    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
 
   return (
     <div className="flex flex-col gap-6">
@@ -273,7 +273,7 @@ function ProfileForm({
             maxLength={BIO_MAX}
             value={values.bio}
             onChange={(event) => update("bio", event.target.value)}
-            className="w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
+            className="w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
           />
           <p className="text-right text-[13px] text-[#84878D]">
             {values.bio.length}/{BIO_MAX}

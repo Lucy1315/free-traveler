@@ -192,7 +192,7 @@ export default function FilterSummary({
   }
 
   const selectClass =
-    "h-12 w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] disabled:bg-[#F7F6F4] disabled:text-[#84878D]";
+    "h-12 w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] disabled:bg-[#F7F6F4] disabled:text-[#84878D]";
   const labelClass = "text-[13px] font-medium text-[#26282C]";
   const filtered = !isMateFilterEmpty(value);
 

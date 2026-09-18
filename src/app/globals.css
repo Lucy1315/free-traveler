@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+/* design-reference/D-001/DESIGN.md §2(색상)·§3(Inter + 한글 시스템 폰트 폴백).
+   create-next-app 기본값(Arial 글꼴, OS 다크 모드 시 검은 배경)을 걷어낸다 —
+   컴포넌트가 밝은 배경 토큰을 직접 쓰므로 배경만 어두워지면 화면이 깨진다. */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #26282c;
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans:
+    var(--font-geist-sans), -apple-system, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* D-001 §10·§15: 키보드 포커스는 2px color-focus-ring으로 항상 보이게 한다.
+   컴포넌트가 따로 지정하지 않은 링크·버튼(헤더·푸터 등)의 기본값이며,
+   utilities 레이어의 개별 focus-visible 클래스가 있으면 그쪽이 우선한다. */
+@layer base {
+  :where(a, button, [role="tab"], summary):focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+  }
+
+  /* 날짜 입력은 연·월·일 칸에 포커스가 가면 입력 자체는 :focus가 아니어서,
+     안쪽 칸에 포커스가 있을 때도 같은 링을 그린다. */
+  input[type="date"]:focus-within {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+  }
 }

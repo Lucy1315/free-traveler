@@ -212,7 +212,7 @@ export default function DomesticDestinationGrid({
                       handleToggleFavorite(destination.id);
                     }
                   }}
-                  className="absolute top-2 right-2 flex h-9 w-9 items-center justify-center rounded-full bg-[#FFFFFF]"
+                  className="absolute top-2 right-2 flex h-11 w-11 items-center justify-center rounded-full bg-[#FFFFFF]"
                 >
                   <HeartIcon filled={favoriteIds.includes(destination.id)} />
                 </span>

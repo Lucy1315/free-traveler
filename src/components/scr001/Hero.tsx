@@ -113,7 +113,7 @@ export default function Hero({ onSearchSelectDestination }: HeroProps) {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="여행지, 국가, 테마, 안전정보로 검색"
-          className="h-14 w-full rounded-full border border-[#E3E2DF] bg-[#FFFFFF] px-6 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
+          className="h-14 w-full rounded-full border border-[#E3E2DF] bg-[#FFFFFF] px-6 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
         />
 
         {results.length > 0 && (

@@ -172,7 +172,7 @@ export default function ReportBlockActions({
   const reasonError =
     reportSubmitted && !reasonCode ? "신고 사유를 선택해 주세요." : null;
   const selectClass =
-    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
+    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
 
   return (
     <section aria-label="신고·차단" className="flex flex-col gap-3">
@@ -310,7 +310,7 @@ export default function ReportBlockActions({
             onChange={(event) => setDescription(event.target.value)}
             rows={3}
             maxLength={REPORT_DESCRIPTION_MAX}
-            className="w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
+            className="w-full rounded-[8px] border border-[#E3E2DF] bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]"
           />
           <p className="text-right text-[13px] text-[#84878D]">
             {description.length}/{REPORT_DESCRIPTION_MAX}

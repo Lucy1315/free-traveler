@@ -288,7 +288,7 @@ export default function MateWriteForm({ locations }: MateWriteFormProps) {
   }
 
   const selectClass =
-    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
+    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
   const errorText = "text-[13px] font-medium text-[#C7284B]";
   const show = (message: string | null) => (submitted ? message : null);
 
@@ -525,7 +525,7 @@ export default function MateWriteForm({ locations }: MateWriteFormProps) {
               value={values.description}
               onChange={(event) => update("description", event.target.value)}
               aria-invalid={show(errors.description) !== null}
-              className={`w-full rounded-[8px] border bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${show(errors.description) ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
+              className={`w-full rounded-[8px] border bg-[#FFFFFF] px-3 py-3 text-[16px] leading-[1.6] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8] ${show(errors.description) ? "border-2 border-[#C7284B]" : "border-[#E3E2DF]"}`}
             />
             <p className="text-[13px] text-[#84878D]">
               전화번호·이메일·메신저 ID는 적지 마세요. 연락처가 보이면 등록이

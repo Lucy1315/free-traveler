@@ -190,7 +190,7 @@ export default function FlightForm({
   const linkCheck = checkExternalUrl(externalUrl, allowlist);
   const canLeave = confirmed !== null && linkCheck.ok;
   const selectClass =
-    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] outline-none focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
+    "h-12 w-full rounded-[8px] border bg-[#FFFFFF] px-3 text-[16px] text-[#26282C] focus:border-2 focus:border-[#26282C] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#1D4ED8]";
 
   return (
     <div data-testid="flight-form" className="flex flex-col gap-6">

@@ -43,12 +43,12 @@ function FooterColumn({
       <h2 className="text-[13px] font-medium uppercase tracking-wide text-[#84878D]">
         {title}
       </h2>
-      <ul className="mt-4 flex flex-col gap-3">
+      <ul className="mt-2 flex flex-col">
         {links.map((link) => (
           <li key={`${link.href}-${link.label}`}>
             <Link
               href={link.href}
-              className="text-[14px] text-[#4B4E54] hover:text-[#26282C]"
+              className="inline-flex min-h-[44px] items-center text-[14px] text-[#4B4E54] hover:text-[#26282C]"
             >
               {link.label}
             </Link>

@@ -32,7 +32,7 @@ export default function Header() {
       <div className="mx-auto flex h-14 max-w-[1440px] items-center justify-between px-4 md:h-[72px] md:px-8">
         <Link
           href="/"
-          className="text-[17px] font-semibold text-[#26282C]"
+          className="inline-flex min-h-[44px] items-center text-[17px] font-semibold text-[#26282C]"
           onClick={() => setMenuOpen(false)}
         >
           Free Traveler
@@ -49,7 +49,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`border-b-2 pb-1 text-[16px] font-semibold transition-colors ${
+                className={`inline-flex min-h-[44px] items-center border-b-2 text-[16px] font-semibold transition-colors ${
                   active
                     ? "border-[#FF6A4D] text-[#26282C]"
                     : "border-transparent text-[#4B4E54] hover:text-[#26282C]"
@@ -65,14 +65,14 @@ export default function Header() {
           <Link
             href="/account"
             aria-label="즐겨찾기"
-            className="flex h-10 w-10 items-center justify-center rounded-full text-[#26282C] hover:bg-[#F0EFEC]"
+            className="flex h-11 w-11 items-center justify-center rounded-full text-[#26282C] hover:bg-[#F0EFEC]"
           >
             <HeartIcon />
           </Link>
           <Link
             href="/account"
             aria-label="계정 또는 로그인"
-            className="flex h-10 w-10 items-center justify-center rounded-full text-[#26282C] hover:bg-[#F0EFEC]"
+            className="flex h-11 w-11 items-center justify-center rounded-full text-[#26282C] hover:bg-[#F0EFEC]"
           >
             <UserIcon />
           </Link>
@@ -80,7 +80,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-full text-[#26282C] md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full text-[#26282C] md:hidden"
           aria-label={menuOpen ? "메뉴 닫기" : "메뉴 열기"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}

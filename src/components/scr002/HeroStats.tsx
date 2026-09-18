@@ -53,7 +53,7 @@ export default function HeroStats() {
             href={hero.image.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="underline"
+            className="inline-flex min-h-[44px] items-center underline"
           >
             {hero.image.credit}
           </a>
