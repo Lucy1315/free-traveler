@@ -78,10 +78,10 @@ export const aboutProfile: AboutProfile = {
     tagline:
       "가볍게 떠나 오래 기억할 여행을 기록하고, 그 경험을 다음 여행자와 나눕니다.",
     image: {
-      url: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
-      alt: "배낭을 메고 산길을 걷는 free_traveler의 뒷모습",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Mountaineering_Man_Trail_Path_Mountains.jpg/1280px-Mountaineering_Man_Trail_Path_Mountains.jpg",
+      alt: "배낭을 메고 산길을 걷는 여행자의 뒷모습",
       sourceUrl:
-        "https://unsplash.com/photos/person-walking-on-pathway-between-green-trees-during-daytime-Fs4mgpn1MEo",
+        "https://commons.wikimedia.org/wiki/File:Mountaineering_Man_Trail_Path_Mountains.jpg",
     },
     stats: [
       { label: "Trips", value: "50+ Trips" },
@@ -98,10 +98,10 @@ export const aboutProfile: AboutProfile = {
       country: "대한민국",
       summary: "오름과 해안도로를 따라 걷기 좋은 사계절 여행지입니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80",
-        alt: "제주 해안도로와 유채꽃밭 풍경",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Jejuolle-route-10%282%29.jpg/960px-Jejuolle-route-10%282%29.jpg",
+        alt: "제주 산방산과 유채꽃밭 풍경",
         sourceUrl:
-          "https://unsplash.com/photos/yellow-flower-field-near-body-of-water-during-daytime-3TLl_97HNJo",
+          "https://commons.wikimedia.org/wiki/File:Jejuolle-route-10(2).jpg",
       },
     },
     {
@@ -110,10 +110,10 @@ export const aboutProfile: AboutProfile = {
       country: "대한민국",
       summary: "해운대와 감천문화마을을 한 번에 즐기는 바다 도시입니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=800&q=80",
-        alt: "부산 감천문화마을 전경",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg/960px-Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
+        alt: "부산 감천문화마을의 알록달록한 집들",
         sourceUrl:
-          "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-aXFojNVMYNo",
+          "https://commons.wikimedia.org/wiki/File:Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
       },
     },
     {
@@ -122,10 +122,10 @@ export const aboutProfile: AboutProfile = {
       country: "베트남",
       summary: "미케비치와 바나힐을 함께 묶어 3박 4일로 다녀오기 좋습니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80",
-        alt: "다낭 미케비치 야자수와 해변",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/My_Khe_Beach_Danang_Coastline.jpg/960px-My_Khe_Beach_Danang_Coastline.jpg",
+        alt: "다낭 미케비치 해안선",
         sourceUrl:
-          "https://unsplash.com/photos/palm-trees-near-beach-during-daytime-2FaEFyQlZE0",
+          "https://commons.wikimedia.org/wiki/File:My_Khe_Beach_Danang_Coastline.jpg",
       },
     },
     {
@@ -134,10 +134,10 @@ export const aboutProfile: AboutProfile = {
       country: "일본",
       summary: "도톤보리 야경과 간사이 근교 당일치기 코스로 유명합니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=800&q=80",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Osaka_Dotonbori_yoru.jpg/960px-Osaka_Dotonbori_yoru.jpg",
         alt: "오사카 도톤보리 야경",
         sourceUrl:
-          "https://unsplash.com/photos/city-buildings-during-night-time-K1jXNekVAQg",
+          "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_yoru.jpg",
       },
     },
     {
@@ -146,10 +146,10 @@ export const aboutProfile: AboutProfile = {
       country: "태국",
       summary: "사원 투어와 야시장을 함께 즐기는 동남아 대표 도시입니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80",
-        alt: "방콕 왓아룬 사원 전경",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg/960px-Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg",
+        alt: "방콕 왓아룬 사원 야경",
         sourceUrl:
-          "https://unsplash.com/photos/temple-under-blue-sky-hSlIzsHOKfQ",
+          "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_37.jpg",
       },
     },
     {
@@ -158,10 +158,10 @@ export const aboutProfile: AboutProfile = {
       country: "프랑스",
       summary: "미술관과 골목 카페를 여유롭게 도보로 둘러보기 좋습니다.",
       image: {
-        url: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
-        alt: "파리 에펠탑과 센 강변 풍경",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/960px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+        alt: "파리 에펠탑과 센 강변 야경",
         sourceUrl:
-          "https://unsplash.com/photos/eiffel-tower-paris-france-2PIH2eqxYAg",
+          "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
       },
     },
   ],
@@ -233,59 +233,58 @@ export const aboutProfile: AboutProfile = {
   // 사진 Gallery 8장(캡션·촬영 국가 병기).
   gallery: [
     {
-      url: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=800&q=80",
-      alt: "산 정상에서 내려다본 마을 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Le_Gan_Chenpo_%28Himalaya%2C_N%C3%A9pal%29_%288446635289%29.jpg/960px-Le_Gan_Chenpo_%28Himalaya%2C_N%C3%A9pal%29_%288446635289%29.jpg",
+      alt: "히말라야 설산과 숲 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/aerial-photography-of-mountain-covered-by-snow-B_-BgTawlB0",
+        "https://commons.wikimedia.org/wiki/File:Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg",
       country: "네팔",
     },
     {
-      url: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-      alt: "골목길 카페 테라스에서 바라본 거리",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/A_well-known_coffee_terrace_%2846610470381%29.jpg/960px-A_well-known_coffee_terrace_%2846610470381%29.jpg",
+      alt: "파리 카페 테라스에 앉은 사람들",
       sourceUrl:
-        "https://unsplash.com/photos/people-sitting-on-chair-near-table-vTNc5342uOo",
+        "https://commons.wikimedia.org/wiki/File:A_well-known_coffee_terrace_(46610470381).jpg",
       country: "프랑스",
     },
     {
-      url: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
-      alt: "고대 사원 유적 앞에 선 여행자",
-      sourceUrl:
-        "https://unsplash.com/photos/temple-during-daytime-fbFAiruUmyc",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Ta_Prohm_%28I%29.jpg/960px-Ta_Prohm_%28I%29.jpg",
+      alt: "나무뿌리에 뒤덮인 타프롬 사원 유적",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Ta_Prohm_(I).jpg",
       country: "캄보디아",
     },
     {
-      url: "https://images.unsplash.com/photo-1533760881669-80db4d7b4c15?auto=format&fit=crop&w=800&q=80",
-      alt: "해질녘 해변을 걷는 사람들",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg/960px-Koh_Mak_%28island%29%2C_Thailand%2C_Sunset_on_the_beach_with_palms.jpg",
+      alt: "해질녘 야자수가 드리운 태국 코막 섬 해변",
       sourceUrl:
-        "https://unsplash.com/photos/silhouette-of-people-walking-on-beach-during-sunset-Yn0l7uwBrpw",
+        "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Sunset_on_the_beach_with_palms.jpg",
       country: "태국",
     },
     {
-      url: "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?auto=format&fit=crop&w=800&q=80",
-      alt: "설산을 배경으로 한 호수",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg/960px-CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
+      alt: "마터호른이 비치는 알프스 호수",
       sourceUrl:
-        "https://unsplash.com/photos/lake-near-mountain-under-blue-sky-during-daytime-9dzWZQWZMdE",
+        "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
       country: "스위스",
     },
     {
-      url: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
-      alt: "야시장 거리 노점 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg/960px-TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg",
+      alt: "타이베이 스린 야시장 거리 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/people-walking-on-street-during-night-time-vI_KTxvMSGc",
+        "https://commons.wikimedia.org/wiki/File:TW_%E5%8F%B0%E7%81%A3_Taiwan_TPE_%E5%8F%B0%E5%8C%97%E5%B8%82_Taipei_%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82_Shilin_Night_Market_March_2024_R12S_621.jpg",
       country: "대만",
     },
     {
-      url: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80",
-      alt: "도시 야경과 강변 다리",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Brooklyn_Bridge%2C_Manhattan_at_night_3.jpg/960px-Brooklyn_Bridge%2C_Manhattan_at_night_3.jpg",
+      alt: "브루클린 브리지와 맨해튼 야경",
       sourceUrl:
-        "https://unsplash.com/photos/city-skyline-during-night-time-lb1uMHiOFAs",
+        "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge,_Manhattan_at_night_3.jpg",
       country: "미국",
     },
     {
-      url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
-      alt: "사막 지평선 위로 떠오르는 태양",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Marokko_W%C3%BCste_01.JPG/960px-Marokko_W%C3%BCste_01.JPG",
+      alt: "모로코 사하라 사막 모래언덕",
       sourceUrl:
-        "https://unsplash.com/photos/silhouette-of-mountain-under-orange-sky-fIq0tLuLPXk",
+        "https://commons.wikimedia.org/wiki/File:Marokko_W%C3%BCste_01.JPG",
       country: "모로코",
     },
   ],

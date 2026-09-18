@@ -53,10 +53,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "JP",
     theme: "도심·쇼핑",
     image: {
-      url: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/960px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
       alt: "도쿄 시부야 교차로 야경",
       sourceUrl:
-        "https://unsplash.com/photos/time-lapse-photography-of-people-walking-on-pedestrian-lane-during-night-jNyvv5S3ah8",
+        "https://commons.wikimedia.org/wiki/File:Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
     },
     summary:
       "도쿄는 전통 사찰과 초고층 빌딩이 공존하는 일본의 수도로, 신주쿠·시부야의 화려한 번화가부터 아사쿠사의 전통 거리까지 다양한 얼굴을 가진 도시입니다. 지하철망이 촘촘히 연결돼 있어 도보와 대중교통만으로도 구역별 특색을 효율적으로 옮겨 다닐 수 있고, 미술관·서점·라멘 골목 같은 소규모 콘텐츠가 밀도 높게 모여 있습니다. 하라주쿠의 트렌디한 패션 거리와 긴자의 고급 쇼핑가가 대조를 이루며, 근교의 디즈니리조트나 온천 마을로 당일치기 확장도 쉽습니다. 사계절 각기 다른 축제와 벚꽃·단풍 명소가 있어 언제 방문해도 계절감 있는 여행이 가능합니다.",
@@ -115,10 +115,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "JP",
     theme: "미식·야경",
     image: {
-      url: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Osaka_Dotonbori_yoru.jpg/960px-Osaka_Dotonbori_yoru.jpg",
       alt: "오사카 도톤보리 야경",
       sourceUrl:
-        "https://unsplash.com/photos/city-buildings-during-night-time-K1jXNekVAQg",
+        "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_yoru.jpg",
     },
     summary:
       "오사카는 도톤보리의 화려한 간판 거리와 저렴하고 풍부한 길거리 음식으로 유명한 간사이 지방의 중심 도시입니다. 오사카성을 중심으로 한 역사 산책과 신사이바시의 쇼핑 거리, 유니버설 스튜디오 재팬 같은 테마파크까지 여행 스타일에 따라 다양한 코스를 짤 수 있습니다. 교토·나라와 열차로 30~40분 거리라 간사이 지역을 묶어 도는 근교 여행의 거점으로도 자주 활용됩니다. 저녁이 되면 도톤보리강을 따라 조명이 켜져 사진 명소가 되며, 다코야키·오코노미야키 등 오사카식 길거리 음식을 맛보는 것이 여행의 핵심 즐거움으로 꼽힙니다. 친근하고 유쾌한 간사이 사투리 억양의 현지인 응대도 오사카 여행의 또 다른 매력입니다.",
@@ -181,10 +181,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "JP",
     theme: "전통·사찰",
     image: {
-      url: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Double_torii_path_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Double_torii_path_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
       alt: "교토 후시미이나리 신사 토리이 길",
       sourceUrl:
-        "https://unsplash.com/photos/red-and-black-wooden-shrine-gate-4LX0LGnOtSY",
+        "https://commons.wikimedia.org/wiki/File:Double_torii_path_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
     },
     summary:
       "교토는 일본의 옛 수도로, 후시미이나리·기요미즈데라·금각사 등 세계적으로 유명한 사찰과 신사가 도시 전역에 흩어져 있는 전통문화 여행지입니다. 기온 지구에서는 전통 가옥이 늘어선 골목을 걸으며 게이샤 문화를 엿볼 수 있고, 아라시야마 대나무숲은 사계절 다른 초록빛으로 여행자를 맞이합니다. 도시 규모가 크지 않아 버스와 도보만으로도 주요 명소를 하루에 여럿 돌아볼 수 있으며, 벚꽃과 단풍 시즌에는 사찰 정원이 특히 붐벼 이른 아침 방문이 권장됩니다. 교토식 가이세키 요리와 말차 디저트 등 미식 여행으로도 손색없는 도시입니다. 전통 기모노를 대여해 골목을 거니는 체험도 여행객들 사이에서 꾸준히 인기가 있습니다.",
@@ -243,10 +243,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "VN",
     theme: "해변·휴양",
     image: {
-      url: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80",
-      alt: "다낭 미케비치 야자수와 해변",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/My_Khe_Beach_Danang_Coastline.jpg/960px-My_Khe_Beach_Danang_Coastline.jpg",
+      alt: "다낭 미케비치 해안선",
       sourceUrl:
-        "https://unsplash.com/photos/palm-trees-near-beach-during-daytime-2FaEFyQlZE0",
+        "https://commons.wikimedia.org/wiki/File:My_Khe_Beach_Danang_Coastline.jpg",
     },
     summary:
       "다낭은 미케비치를 따라 리조트가 늘어선 베트남 중부의 대표 휴양 도시로, 근교의 호이안·바나힐과 묶어 3박 4일 코스로 자주 방문됩니다. 한강을 가로지르는 용다리는 주말 밤 불쇼로 유명하고, 오행산은 도심에서 가까운 트레킹·동굴 사찰 명소입니다. 바나힐은 케이블카로 산 정상까지 올라가는 테마파크로, 골든브릿지의 거대한 손 조형물이 대표 포토스팟입니다. 도보로 30분 거리에 있는 호이안 구시가지는 노란 벽과 등불 골목으로 유네스코 세계문화유산에 등재돼 있어, 다낭 여행에서 함께 방문하는 경우가 많습니다. 한국에서 직항으로 4~5시간이면 도착해 짧은 일정의 휴양 여행지로도 꾸준히 사랑받습니다.",
@@ -305,10 +305,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "VN",
     theme: "구시가지·역사",
     image: {
-      url: "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=800&q=80",
-      alt: "하노이 구시가지 거리 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Street_seller_of_fingered_citrons_in_Old_Town_of_Hanoi%2C_20240204_1335_5772.jpg/960px-Street_seller_of_fingered_citrons_in_Old_Town_of_Hanoi%2C_20240204_1335_5772.jpg",
+      alt: "하노이 구시가지 거리의 노점상",
       sourceUrl:
-        "https://unsplash.com/photos/people-walking-on-street-near-buildings-during-daytime-5QGIuWZCz2E",
+        "https://commons.wikimedia.org/wiki/File:Street_seller_of_fingered_citrons_in_Old_Town_of_Hanoi,_20240204_1335_5772.jpg",
     },
     summary:
       "하노이는 프랑스 식민지 시대의 건축물과 좁은 구시가지 골목이 어우러진 베트남의 수도로, 호안끼엠 호수를 중심으로 도보 여행이 발달해 있습니다. 36거리로 불리는 구시가지는 업종별로 상점이 모여 있어 걷는 것만으로도 생활 문화를 엿볼 수 있고, 호치민 묘·문묘 등 역사 유적도 도심 안에 밀집해 있습니다. 저녁이 되면 구시가지 맥주 거리에 관광객과 현지인이 뒤섞여 활기를 띠며, 근교의 하롱베이·닌빈으로 당일 또는 1박 투어를 떠나는 거점 도시로도 널리 이용됩니다. 쌀국수·분짜 등 베트남 북부 음식의 본고장으로 미식 여행지로도 손꼽힙니다.",
@@ -367,10 +367,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "TH",
     theme: "사원·야시장",
     image: {
-      url: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80",
-      alt: "방콕 왓아룬 사원 전경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg/960px-Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg",
+      alt: "방콕 왓아룬 사원 야경",
       sourceUrl:
-        "https://unsplash.com/photos/temple-under-blue-sky-hSlIzsHOKfQ",
+        "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_37.jpg",
     },
     summary:
       "방콕은 왓아룬·왕궁 같은 화려한 사원 건축과 짜뚜짝 시장·야시장 같은 활기찬 상업 문화가 공존하는 동남아시아 대표 관문 도시입니다. 차오프라야 강을 따라 보트로 이동하며 사원을 둘러보는 코스가 인기가 많고, 카오산로드는 배낭여행자들의 오랜 집결지로 저녁이면 거리 전체가 축제 같은 분위기가 됩니다. 시내 곳곳에 마사지숍과 루프탑 바가 발달해 있어 짧은 일정으로도 다양한 체험을 압축해서 즐길 수 있고, BTS·MRT 등 대중교통이 잘 갖춰져 있어 이동도 편리합니다. 태국 남부·북부 여행의 경유지로도 자주 활용되는 도시입니다. 물가가 저렴한 편이라 마사지·미식 체험을 여유롭게 즐길 수 있는 것도 큰 장점입니다.",
@@ -429,10 +429,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "TH",
     theme: "산악·전통",
     image: {
-      url: "https://images.unsplash.com/photo-1598935888738-cd2622bb8757?auto=format&fit=crop&w=800&q=80",
-      alt: "치앙마이 사원 도이수텝 전경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Wat_Phra_That_Doi_Suthep_%28I%29.jpg/960px-Wat_Phra_That_Doi_Suthep_%28I%29.jpg",
+      alt: "치앙마이 도이수텝 사원 황금 불탑",
       sourceUrl:
-        "https://unsplash.com/photos/gold-and-red-temple-under-blue-sky-during-daytime-gv9UeYT_r0o",
+        "https://commons.wikimedia.org/wiki/File:Wat_Phra_That_Doi_Suthep_(I).jpg",
     },
     summary:
       "치앙마이는 태국 북부 산악 지대에 위치한 옛 란나 왕국의 수도로, 도심을 둘러싼 성곽과 수백 개의 사원이 느긋한 분위기를 만드는 여행지입니다. 도이수텝 사원에서는 도시 전경을 한눈에 내려다볼 수 있고, 님만해민 지역은 카페와 편집숍이 모인 트렌디한 골목으로 젊은 여행자들에게 인기가 많습니다. 매년 11월 열리는 러이끄라통 축제(등불 축제) 기간에는 도시 전체가 종이등으로 물들어 특별한 분위기를 자아냅니다. 코끼리 보호구역 방문, 쿠킹 클래스 등 체험형 프로그램이 발달해 있어 자연·문화 체험을 함께 원하는 여행자에게 적합합니다. 방콕보다 물가가 저렴하고 여유로운 분위기라 장기 체류형 여행지로도 인기가 높습니다.",
@@ -491,10 +491,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "TW",
     theme: "야시장·온천",
     image: {
-      url: "https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=800&q=80",
-      alt: "타이베이 101 빌딩 야경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Taipei_Night_Skyline_from_Hongludi_20240113.jpg/960px-Taipei_Night_Skyline_from_Hongludi_20240113.jpg",
+      alt: "타이베이 101 빌딩과 도심 야경",
       sourceUrl:
-        "https://unsplash.com/photos/high-rise-building-during-night-time-Yhc8dtdgnQE",
+        "https://commons.wikimedia.org/wiki/File:Taipei_Night_Skyline_from_Hongludi_20240113.jpg",
     },
     summary:
       "타이베이는 타이베이101을 중심으로 한 현대적인 스카이라인과 스린·라오허제 등 대형 야시장이 공존하는 대만의 수도입니다. 지하철(MRT)이 도시 전역을 촘촘히 연결해 초행자도 이동이 쉽고, 근교의 지우펀·베이터우 온천까지 반나절 코스로 다녀올 수 있습니다. 고궁박물관에서는 중국 역대 왕조의 유물을, 융캉제 골목에서는 망고빙수 등 대만 디저트를 함께 즐길 수 있어 문화와 미식을 고루 갖춘 여행지로 꼽힙니다. 습한 아열대 기후 특성상 실내 온천·스파 문화가 발달해 있어 사계절 방문에도 즐길 거리가 꾸준합니다. 한국에서 직항으로 2시간 반 정도면 도착해 짧은 주말 여행지로도 꾸준히 사랑받습니다.",
@@ -553,10 +553,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "TW",
     theme: "항구·예술",
     image: {
-      url: "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=800&q=80",
-      alt: "가오슝 항구 야경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2021_Kaohsiung_harbor_Light_show.jpg/960px-2021_Kaohsiung_harbor_Light_show.jpg",
+      alt: "가오슝 항구 야경과 조명 쇼",
       sourceUrl:
-        "https://unsplash.com/photos/city-skyline-across-body-of-water-during-night-time-3TXlAqvbi_c",
+        "https://commons.wikimedia.org/wiki/File:2021_Kaohsiung_harbor_Light_show.jpg",
     },
     summary:
       "가오슝은 대만 남부의 항구 도시로, 타이베이보다 느긋한 분위기와 넓은 도로, 바다를 낀 산책로가 매력적인 여행지입니다. 롄츠탄 호수의 용호탑, 포광산 불광사의 거대한 불상 등 대형 랜드마크가 도시 곳곳에 자리하고, 옛 항만 창고를 개조한 보얼예술특구는 젊은 예술가들의 전시 공간으로 활용됩니다. 시즈완 해변과 치진섬은 자전거로 둘러보기 좋은 해안 코스를 제공하며, 대중교통은 MRT와 경전철(LRT)이 함께 운영돼 이동이 편리합니다. 타이베이에 비해 상대적으로 여행자가 적어 여유로운 도시 여행을 원하는 사람에게 적합합니다. 남국적인 기후라 겨울에도 따뜻한 날씨의 여행을 즐길 수 있습니다.",
@@ -615,10 +615,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "PH",
     theme: "해양·리조트",
     image: {
-      url: "https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=800&q=80",
-      alt: "세부 해변 리조트 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Sugar_Beach_Bantayan.jpg/960px-Sugar_Beach_Bantayan.jpg",
+      alt: "세부 반타얀 섬의 하얀 모래 해변",
       sourceUrl:
-        "https://unsplash.com/photos/aerial-view-of-beach-during-daytime-lMlrO0jCzq0",
+        "https://commons.wikimedia.org/wiki/File:Sugar_Beach_Bantayan.jpg",
     },
     summary:
       "세부는 필리핀 중부 최대 관광 거점으로, 막탄섬의 리조트 지구와 세부 시티의 역사 유적이 함께 있는 해양 휴양지입니다. 고래상어 스노클링으로 유명한 오슬롭, 옥청빛 폭포가 이어지는 카와산 폭포 등 자연 액티비티가 풍부하고, 막탄섬의 화이트샌드 리조트에서는 스노클링·다이빙 등 해양 스포츠를 즐길 수 있습니다. 세부 시티에는 마젤란 십자가·산토니뇨 성당 등 스페인 식민지 시대 유적이 남아 있어 휴양과 역사 탐방을 함께 계획할 수 있습니다. 인근 보홀섬으로 페리를 타고 이동해 초콜릿힐·안경원숭이를 보는 1박 코스도 인기입니다. 한국에서 직항으로 4시간대에 도착할 수 있어 가족 단위 휴양 여행으로도 자주 선택됩니다.",
@@ -677,10 +677,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "PH",
     theme: "역사·도심",
     image: {
-      url: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80",
-      alt: "마닐라 인트라무로스 성벽 거리",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Manila%2C_Fort_Santiago%2C_Walled_city_of_Intramuros%2C_Philippines.jpg/960px-Manila%2C_Fort_Santiago%2C_Walled_city_of_Intramuros%2C_Philippines.jpg",
+      alt: "마닐라 인트라무로스 산티아고 요새 성문",
       sourceUrl:
-        "https://unsplash.com/photos/gray-concrete-building-during-daytime-3g2LQZmZGXk",
+        "https://commons.wikimedia.org/wiki/File:Manila,_Fort_Santiago,_Walled_city_of_Intramuros,_Philippines.jpg",
     },
     summary:
       "마닐라는 필리핀의 수도로, 스페인 식민지 시대의 성곽 도시 인트라무로스와 현대적인 마카티·보니파시오 글로벌시티가 대조를 이루는 대도시입니다. 인트라무로스에서는 산티아고 요새·마닐라 대성당 등 400년 역사 건축물을 도보로 둘러볼 수 있고, 리잘공원에서는 필리핀 독립운동의 상징을 마주할 수 있습니다. 마카티·BGC 지역은 대형 쇼핑몰과 루프탑 바가 발달해 있어 현대적인 도시 여행도 함께 즐길 수 있습니다. 근교의 타가이타이에서는 따알 화산을 조망하며 선선한 고원 기후를 경험할 수 있어, 도심 여행과 자연 여행을 함께 계획하기 좋습니다.",
@@ -743,10 +743,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "MY",
     theme: "도심·다문화",
     image: {
-      url: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Petronas_twin_towers_at_night.jpg/960px-Petronas_twin_towers_at_night.jpg",
       alt: "쿠알라룸푸르 페트로나스 트윈타워 야경",
       sourceUrl:
-        "https://unsplash.com/photos/high-rise-buildings-during-night-time-3TXlAqvbi_c",
+        "https://commons.wikimedia.org/wiki/File:Petronas_twin_towers_at_night.jpg",
     },
     summary:
       "쿠알라룸푸르는 페트로나스 트윈타워로 대표되는 현대적 스카이라인과 말레이·중국·인도 문화가 뒤섞인 다문화 거리가 공존하는 말레이시아의 수도입니다. 부킷빈탕 일대는 쇼핑몰과 야시장이 밀집해 있고, 차이나타운·리틀인디아는 각기 다른 색채의 골목 풍경을 보여줍니다. 근교의 바투 동굴은 거대한 황금 신상과 272개 계단으로 유명한 힌두교 성지이며, 반나절 코스로 다녀오기 좋습니다. 열대 기후로 연중 온화한 편이라 계절에 크게 구애받지 않고 방문할 수 있는 여행지입니다. 다양한 민족의 음식 문화가 뒤섞여 있어 한 도시에서 여러 나라의 미식을 함께 즐길 수 있습니다.",
@@ -805,9 +805,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "MY",
     theme: "골목·미식",
     image: {
-      url: "https://images.unsplash.com/photo-1571406384446-9b02d8b1a0b5?auto=format&fit=crop&w=800&q=80",
-      alt: "페낭 조지타운 벽화 골목",
-      sourceUrl: "https://unsplash.com/photos/painting-on-wall-1JIiCX6oECE",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Penang_Malaysia_Street-art-10.jpg/960px-Penang_Malaysia_Street-art-10.jpg",
+      alt: "페낭 조지타운 자전거 탄 아이들 벽화",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Penang_Malaysia_Street-art-10.jpg",
     },
     summary:
       "페낭은 유네스코 세계문화유산으로 지정된 조지타운을 중심으로, 식민지 시대 건축물과 스트리트 아트, 다양한 길거리 음식이 어우러진 말레이시아의 미식 여행지입니다. 조지타운 골목 곳곳에는 벽화와 철제 캐리커처가 숨어 있어 도보로 찾아다니는 재미가 있고, 페낭힐에서는 케이블카를 타고 올라 조지타운 전경을 내려다볼 수 있습니다. 존커 스트리트 인근 호커센터에서는 페낭식 락사·차퀘이티아우 등 대표 음식을 한자리에서 맛볼 수 있어, 하루 코스로도 미식 투어가 가능합니다. 상대적으로 관광객이 붐비지 않아 여유로운 골목 산책을 원하는 여행자에게 적합합니다.",
@@ -866,10 +867,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "ID",
     theme: "해변·힐링",
     image: {
-      url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
-      alt: "발리 우붓 계단식 논 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Rice_terraces%2C_Bali.jpg/960px-Rice_terraces%2C_Bali.jpg",
+      alt: "발리 우붓 뜨갈랄랑 계단식 논 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/green-rice-field-during-daytime-3TXlAqvbi_c",
+        "https://commons.wikimedia.org/wiki/File:Rice_terraces,_Bali.jpg",
     },
     summary:
       "발리는 우붓의 계단식 논, 꾸따·스미냑의 서핑 해변, 힌두 사원이 어우러진 인도네시아의 대표 휴양섬입니다. 우붓은 요가·명상 리트릿과 예술 마을로 유명해 힐링 여행을 원하는 사람들에게, 꾸따·스미냑은 서핑과 비치클럽으로 젊은 여행자들에게 각각 인기가 많습니다. 타나롯 사원의 해상 일몰, 울루와뚜 사원의 절벽 전망은 발리를 대표하는 사진 명소로 꼽힙니다. 섬 전역에 걸쳐 빌라형 숙소가 발달해 있어 커플·가족 여행 모두에 적합하고, 계단식 논과 화산을 함께 조망하는 반나절 투어도 인기 코스입니다. 허니문 여행지로도 오랫동안 사랑받아 사적인 풀빌라 숙소 선택지가 매우 다양합니다.",
@@ -928,10 +929,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "ID",
     theme: "대도시·쇼핑",
     image: {
-      url: "https://images.unsplash.com/photo-1555899434-94d1368aa7af?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Monumen_Nasional%2C_Jakarta%2C_Indonesia.jpg/960px-Monumen_Nasional%2C_Jakarta%2C_Indonesia.jpg",
       alt: "자카르타 모나스 기념탑과 도심 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/white-concrete-building-during-daytime-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Monumen_Nasional,_Jakarta,_Indonesia.jpg",
     },
     summary:
       "자카르타는 인도네시아의 수도이자 동남아시아 최대 규모 도시 중 하나로, 모나스(독립기념탑)를 중심으로 한 현대적 행정 구역과 코타투아(구시가지)의 식민지 시대 건축이 함께 있는 대도시입니다. 대형 쇼핑몰과 미식 거리가 발달해 있어 도시형 여행을 즐기는 사람들에게 적합하고, 코타투아 지역에서는 자카르타 역사박물관과 네덜란드풍 건축을 도보로 둘러볼 수 있습니다. 교통 체증이 심한 편이라 지하철(MRT)·경전철(LRT) 등 신설 대중교통을 활용하는 것이 효율적입니다. 발리·족자카르타 등 다른 지역 여행의 관문 도시로도 자주 활용됩니다. 다국적 기업과 현지 스타트업이 밀집한 비즈니스 여행 수요도 꾸준한 도시입니다.",
@@ -990,10 +991,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "SG",
     theme: "도시국가·정원",
     image: {
-      url: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Gardens_by_the_Bay%2C_Marina_Bay%2C_Singapur%2C_2023-08-19%2C_DD_29-31_HDR.jpg/960px-Gardens_by_the_Bay%2C_Marina_Bay%2C_Singapur%2C_2023-08-19%2C_DD_29-31_HDR.jpg",
       alt: "싱가포르 마리나베이샌즈와 가든스바이더베이 야경",
       sourceUrl:
-        "https://unsplash.com/photos/city-skyline-during-night-time-ZsOB0YowXlM",
+        "https://commons.wikimedia.org/wiki/File:Gardens_by_the_Bay,_Marina_Bay,_Singapur,_2023-08-19,_DD_29-31_HDR.jpg",
     },
     summary:
       "싱가포르는 도시 전체가 하나의 관광지처럼 정비된 도시국가로, 마리나베이샌즈·가든스바이더베이의 미래적인 스카이라인과 차이나타운·리틀인디아·아랍 스트리트의 다문화 골목이 촘촘히 공존합니다. 대중교통(MRT)이 정확하고 깨끗해 초행자도 이동이 매우 쉽고, 공항(창이국제공항)조차 정원과 워터폭이 있는 관광명소로 꼽힙니다. 센토사섬에는 유니버설 스튜디오 싱가포르 등 테마파크가 모여 있어 가족 여행에도 적합하며, 클락키·리버사이드는 저녁 시간 강변 야경 산책 코스로 인기가 많습니다. 국토가 작아 2~3일이면 핵심 명소를 효율적으로 돌아볼 수 있습니다.",
@@ -1052,10 +1053,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "KH",
     theme: "유적·사원",
     image: {
-      url: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Angkor_Wat_Sunrise_%28209237385%29.jpeg/960px-Angkor_Wat_Sunrise_%28209237385%29.jpeg",
       alt: "앙코르와트 일출 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/temple-under-blue-sky-hSlIzsHOKfQ",
+        "https://commons.wikimedia.org/wiki/File:Angkor_Wat_Sunrise_(209237385).jpeg",
     },
     summary:
       "씨엠립은 세계문화유산 앙코르와트를 비롯한 크메르 제국의 사원 유적군이 모여 있는 캄보디아의 대표 여행지입니다. 앙코르와트의 일출, 따프롬 사원의 나무뿌리가 뒤덮은 폐허, 바이욘 사원의 거대한 얼굴 조각 등 각기 다른 매력의 사원을 하루 이틀에 걸쳐 순환하며 둘러보는 것이 대표 코스입니다. 시내 펍스트리트에서는 저녁마다 현지인과 여행자가 뒤섞여 활기찬 분위기를 즐길 수 있고, 톤레삽 호수 수상마을 투어를 통해 캄보디아 서민들의 생활상을 엿볼 수도 있습니다. 유적 관람이 야외에서 오래 이루어지므로 더위 대비가 특히 중요한 여행지입니다.",
@@ -1118,10 +1119,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "KH",
     theme: "역사·강변",
     image: {
-      url: "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80",
-      alt: "프놈펜 왕궁 전경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Royal_Palace%2C_Phnom_Penh_Cambodia_1.jpg/960px-Royal_Palace%2C_Phnom_Penh_Cambodia_1.jpg",
+      alt: "프놈펜 왕궁 즉위식장 전경",
       sourceUrl:
-        "https://unsplash.com/photos/gold-and-white-temple-under-blue-sky-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Royal_Palace,_Phnom_Penh_Cambodia_1.jpg",
     },
     summary:
       "프놈펜은 톤레삽강과 메콩강이 만나는 지점에 자리한 캄보디아의 수도로, 화려한 왕궁·실버파고다와 근현대사의 아픔이 담긴 킬링필드·뚜올슬렝 박물관이 공존하는 도시입니다. 강변 산책로(시소와트 부두)는 저녁마다 현지인들의 산책·운동 코스로 붐비며, 중앙시장(프사트마이)은 아르데코 양식의 독특한 건축으로도 유명합니다. 역사적 아픔을 다루는 유적지가 많아 다른 동남아 도시보다 진지한 분위기의 여행이 될 수 있으며, 방문 시 이러한 배경에 대한 이해와 예의가 필요합니다. 씨엠립으로 이동하는 관문 도시로도 자주 활용됩니다. 최근에는 강변을 따라 카페·루프탑 바가 새롭게 들어서며 활기를 더하고 있습니다.",
@@ -1180,10 +1181,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "FR",
     theme: "예술·낭만",
     image: {
-      url: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
-      alt: "파리 에펠탑과 센 강변 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/960px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+      alt: "파리 에펠탑과 센 강변 야경",
       sourceUrl:
-        "https://unsplash.com/photos/eiffel-tower-paris-france-2PIH2eqxYAg",
+        "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
     },
     summary:
       "파리는 에펠탑·루브르박물관·노트르담대성당 등 세계적인 랜드마크가 도보권에 밀집한 프랑스의 수도로, 미술관과 골목 카페를 오가는 느긋한 도보 여행이 특히 잘 어울리는 도시입니다. 센 강변을 따라 걷다 보면 다리마다 다른 풍경을 만날 수 있고, 몽마르트 언덕에서는 사크레쾨르 대성당과 함께 파리 시내 전경을 감상할 수 있습니다. 지하철(메트로)이 촘촘히 연결돼 있어 도시 전역을 효율적으로 이동할 수 있으며, 베르사유궁전 등 근교 명소도 당일치기로 다녀오기 좋습니다. 미술관 입장 대기가 긴 편이라 온라인 사전 예약이 권장됩니다. 사계절 내내 패션·미식 트렌드를 이끄는 도시로도 꾸준히 주목받습니다.",
@@ -1242,10 +1243,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "FR",
     theme: "해안·휴양",
     image: {
-      url: "https://images.unsplash.com/photo-1491166617655-0723a0999cfc?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Promenade_des_Anglais_%28Nice%29%2C_France.jpg/960px-Promenade_des_Anglais_%28Nice%29%2C_France.jpg",
       alt: "니스 프롬나드 데 장글레 해안 산책로",
       sourceUrl:
-        "https://unsplash.com/photos/blue-sea-under-blue-sky-during-daytime-3TXlAqvbi_c",
+        "https://commons.wikimedia.org/wiki/File:Promenade_des_Anglais_(Nice),_France.jpg",
     },
     summary:
       "니스는 프랑스 남부 코트다쥐르 해안에 위치한 휴양 도시로, 프롬나드 데 장글레 해안 산책로와 구시가지의 파스텔톤 건물이 어우러진 풍경으로 유명합니다. 구시가지(비외니스)의 좁은 골목에는 시장과 카페가 밀집해 있어 도보로 미식 투어를 하기 좋고, 콜린 뒤 샤토 언덕에서는 니스 해안 전경을 한눈에 담을 수 있습니다. 인근 소도시 에즈·모나코까지 기차로 20~40분이면 이동할 수 있어, 지중해 연안 도시들을 함께 묶는 여행 거점으로도 자주 활용됩니다. 여름철에는 해수욕을, 봄·가을에는 온화한 날씨의 산책 여행을 즐기기 좋습니다. 파리보다 여유로운 속도로 지중해 분위기를 느끼고 싶은 여행자에게 특히 알맞습니다.",
@@ -1304,10 +1305,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "IT",
     theme: "고대유적·역사",
     image: {
-      url: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/960px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
       alt: "로마 콜로세움 전경",
       sourceUrl:
-        "https://unsplash.com/photos/brown-concrete-building-during-daytime-2iBjHfXi72M",
+        "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
     },
     summary:
       "로마는 콜로세움·포로 로마노 등 고대 로마 제국의 유적이 도심 한복판에 그대로 남아 있는 도시로, 걷는 곳마다 2000년 역사와 마주하게 됩니다. 바티칸시국의 성베드로대성당·시스티나성당은 별도의 국가이지만 로마 여행에서 함께 방문하는 필수 코스이며, 트레비분수·스페인광장 등 소품 같은 명소들이 도보권에 이어져 있습니다. 좁은 골목 트라스테베레 지구는 저녁마다 현지인들이 모이는 활기찬 레스토랑 거리로 변하고, 젤라토와 에스프레소 문화가 발달해 있어 걷다가 쉬어가는 여행이 자연스럽게 이루어집니다. 유적 대부분이 야외에 있어 여름철 더위 대비가 필요합니다.",
@@ -1370,10 +1371,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "IT",
     theme: "르네상스·예술",
     image: {
-      url: "https://images.unsplash.com/photo-1543429257-63e7d0a4a5a5?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg/960px-Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg",
       alt: "피렌체 두오모 대성당과 시내 전경",
       sourceUrl:
-        "https://unsplash.com/photos/brown-and-white-concrete-building-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg",
     },
     summary:
       "피렌체는 르네상스 미술의 중심지로, 두오모 대성당의 거대한 붉은 돔과 우피치미술관의 방대한 회화 컬렉션이 도시를 대표합니다. 미켈란젤로광장에서 바라보는 피렌체 전경은 해질 무렵 특히 아름다워 여행자들이 꾸준히 찾는 명소이며, 베키오다리는 다리 위에 상점이 늘어선 독특한 구조로 유명합니다. 도시가 크지 않아 대부분의 명소를 도보로 이동할 수 있고, 근교의 피사·시에나까지 기차로 1시간 내외면 다녀올 수 있어 토스카나 지역 여행의 거점으로도 활용됩니다. 가죽공예·와인 등 토스카나 특산품 쇼핑도 여행의 즐거움 중 하나입니다. 예술사에 관심 있는 여행자라면 며칠을 머물러도 부족하지 않을 만큼 볼거리가 밀도 있게 모여 있습니다.",
@@ -1432,10 +1433,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "ES",
     theme: "건축·해변",
     image: {
-      url: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Sagrada_Fam%C3%ADlia_2010.JPG/960px-Sagrada_Fam%C3%ADlia_2010.JPG",
       alt: "바르셀로나 사그라다파밀리아 성당 외관",
       sourceUrl:
-        "https://unsplash.com/photos/brown-concrete-cathedral-under-blue-sky-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Sagrada_Fam%C3%ADlia_2010.JPG",
     },
     summary:
       "바르셀로나는 가우디의 사그라다파밀리아·구엘공원 등 독창적인 건축물과 지중해 해변이 함께 있는 스페인 카탈루냐 지방의 중심 도시입니다. 고딕지구의 좁은 골목은 중세 건물이 그대로 남아 있어 도보 여행에 알맞고, 람블라스 거리는 낮과 밤 모두 활기찬 산책 코스로 사랑받습니다. 바르셀로네타 해변에서는 도심에서 가깝게 지중해 해수욕을 즐길 수 있어, 건축·예술 여행과 해변 휴양을 함께 계획할 수 있는 흔치 않은 도시입니다. 타파스 바 문화가 발달해 있어 여러 곳을 옮겨 다니며 소량씩 맛보는 식사 방식이 일반적입니다. 축구 경기 일정과 맞물리면 캄프누 스타디움 투어도 인기 있는 코스가 됩니다.",
@@ -1494,10 +1495,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "ES",
     theme: "미술관·왕궁",
     image: {
-      url: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Palacio_Real_de_Madrid_-_13.jpg/960px-Palacio_Real_de_Madrid_-_13.jpg",
       alt: "마드리드 왕궁 전경",
       sourceUrl:
-        "https://unsplash.com/photos/white-and-brown-concrete-building-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Palacio_Real_de_Madrid_-_13.jpg",
     },
     summary:
       "마드리드는 스페인의 수도로, 프라도미술관·레이나소피아미술관 등 세계적인 미술관과 마드리드왕궁 같은 웅장한 건축물이 도심에 모여 있는 문화 여행지입니다. 솔광장을 중심으로 그란비아·마요르광장까지 도보로 이어져 있어 쇼핑과 산책을 함께 즐길 수 있고, 레티로공원에서는 도심 속 여유로운 휴식을 취할 수 있습니다. 스페인 특유의 늦은 저녁 식사 문화와 타파스 바가 발달해 있어 밤늦게까지 활기찬 거리 분위기를 경험할 수 있습니다. 톨레도·세고비아 등 근교 소도시로 당일치기 여행을 떠나기도 좋은 거점 도시입니다. 바르셀로나와 함께 스페인 여행의 양대 축으로 꼽히는 대도시입니다.",
@@ -1556,10 +1557,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "US",
     theme: "대도시·문화",
     image: {
-      url: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80",
-      alt: "뉴욕 맨해튼 스카이라인",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Lower_Manhattan_from_Governors_Island_with_a_fishing_boat_%2846294p%29.jpg/960px-Lower_Manhattan_from_Governors_Island_with_a_fishing_boat_%2846294p%29.jpg",
+      alt: "뉴욕 로어 맨해튼 스카이라인",
       sourceUrl:
-        "https://unsplash.com/photos/city-buildings-during-daytime-hAAOtdQ4djY",
+        "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Governors_Island_with_a_fishing_boat_(46294p).jpg",
     },
     summary:
       "뉴욕은 타임스스퀘어·센트럴파크·자유의여신상 등 세계적으로 유명한 랜드마크가 맨해튼 섬 안에 밀집한 미국 최대 도시입니다. 브로드웨이 뮤지컬, 메트로폴리탄미술관 같은 대형 공연·전시 콘텐츠가 풍부해 문화 예술 여행에 특히 적합하고, 지하철이 24시간 운행돼 야간 이동도 비교적 자유롭습니다. 소호·첼시마켓 등 구역별로 뚜렷한 개성이 있어 하루씩 구역을 나눠 도는 코스가 일반적이며, 브루클린 다리를 건너 바라보는 맨해튼 스카이라인도 대표 사진 명소입니다. 물가가 높은 편이라 예산 계획을 넉넉히 세우는 것이 좋습니다. 전 세계 다양한 문화가 뒤섞인 거리 풍경 자체가 하나의 볼거리로 꼽힙니다.",
@@ -1618,9 +1619,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "US",
     theme: "해변·엔터테인먼트",
     image: {
-      url: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Santa_Monica_Pier_from_Santa_Monica_State_Beach_03.jpg/960px-Santa_Monica_Pier_from_Santa_Monica_State_Beach_03.jpg",
       alt: "로스앤젤레스 산타모니카 해변과 부두",
-      sourceUrl: "https://unsplash.com/photos/pier-during-daytime-9dzWZQWZMdE",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Santa_Monica_Pier_from_Santa_Monica_State_Beach_03.jpg",
     },
     summary:
       "로스앤젤레스는 할리우드·비벌리힐스 같은 엔터테인먼트 산업의 중심지와 산타모니카·베니스비치 등 서핑 문화가 발달한 해변이 공존하는 미국 서부의 대도시입니다. 도시가 넓게 퍼져 있어 렌터카 이용이 사실상 필수이며, 구역마다 분위기가 크게 달라 하루 단위로 지역을 나눠 여행하는 것이 효율적입니다. 유니버설스튜디오 할리우드·디즈니랜드 등 테마파크가 모여 있어 가족 여행에도 적합하고, 그리피스천문대에서 바라보는 할리우드 사인과 도심 야경도 대표 명소로 꼽힙니다. 연중 온화한 기후라 계절에 크게 구애받지 않고 방문할 수 있습니다. 서핑·요가 등 웰니스 라이프스타일을 체험하기에도 좋은 도시로 꼽힙니다.",
@@ -1679,10 +1681,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "AU",
     theme: "항구·해변",
     image: {
-      url: "https://images.unsplash.com/photo-1524293581917-878a6d017c71?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Sydney_Opera_House_and_Harbour_Bridge%2C_southeast_view_20230224_1.jpg/960px-Sydney_Opera_House_and_Harbour_Bridge%2C_southeast_view_20230224_1.jpg",
       alt: "시드니 오페라하우스와 하버브리지",
       sourceUrl:
-        "https://unsplash.com/photos/sydney-opera-house-australia-Xt6d9fk_1zk",
+        "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge,_southeast_view_20230224_1.jpg",
     },
     summary:
       "시드니는 오페라하우스와 하버브리지가 만드는 상징적인 항구 풍경과 본다이비치 등 도심에서 가까운 서핑 해변이 함께 있는 호주 최대 도시입니다. 서큘러키를 기점으로 페리를 타고 항구를 오가며 도시를 감상하는 코스가 대표적이며, 록스 지역은 식민지 시대 건축이 남아 있는 구시가지로 주말마다 마켓이 열립니다. 본다이비치에서 쿠지비치까지 이어지는 해안 산책로(코스탈 워크)는 절벽과 바다 전망을 함께 즐길 수 있어 인기가 많습니다. 남반구에 위치해 계절이 한국과 반대이므로 여행 시기의 기후를 미리 확인하는 것이 중요합니다. 도심과 자연이 가까이 붙어 있어 짧은 일정으로도 다양한 풍경을 경험할 수 있습니다.",
@@ -1741,10 +1743,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "AU",
     theme: "카페·골목",
     image: {
-      url: "https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=800&q=80",
-      alt: "멜버른 도심 골목 카페 거리",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/AUS_Melbourne%2C_Central_Business_District%2C_Degraves_Street_001.jpg/960px-AUS_Melbourne%2C_Central_Business_District%2C_Degraves_Street_001.jpg",
+      alt: "멜버른 디그레이브스 거리 골목 카페",
       sourceUrl:
-        "https://unsplash.com/photos/people-walking-on-street-during-daytime-vTNc5342uOo",
+        "https://commons.wikimedia.org/wiki/File:AUS_Melbourne,_Central_Business_District,_Degraves_Street_001.jpg",
     },
     summary:
       "멜버른은 호주 최고의 커피 도시로 꼽히는 곳으로, 도심 곳곳의 레인웨이(골목)에 자리한 카페와 스트리트 아트가 도시의 개성을 만듭니다. 페더레이션 스퀘어를 중심으로 트램이 도심 전역을 무료로 순환해 관광객도 쉽게 이동할 수 있고, 퀸빅토리아마켓에서는 신선한 식재료와 다양한 길거리 음식을 함께 즐길 수 있습니다. 그레이트오션로드로 이어지는 해안 드라이브 코스가 근교에 있어, 렌터카를 이용한 1박 2일 확장 여행도 인기가 많습니다. 스포츠·예술 축제가 연중 끊이지 않아 방문 시기에 따라 다른 이벤트를 경험할 수 있는 도시입니다. 시드니보다 차분하고 예술적인 분위기를 선호하는 여행자에게 잘 맞습니다.",
@@ -1803,10 +1805,10 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "CZ",
     theme: "고성·구시가지",
     image: {
-      url: "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
-      alt: "프라하 구시가지 광장과 첨탑",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Prague%2C_Old_Town_Square%2C_COVID.jpg/960px-Prague%2C_Old_Town_Square%2C_COVID.jpg",
+      alt: "프라하 구시가지 광장과 틴 성당 첨탑",
       sourceUrl:
-        "https://unsplash.com/photos/brown-concrete-building-during-daytime-lb1uMHiOFAs",
+        "https://commons.wikimedia.org/wiki/File:Prague,_Old_Town_Square,_COVID.jpg",
     },
     summary:
       '프라하는 "동유럽의 파리"로 불리는 체코의 수도로, 프라하성·카를교·구시가지 광장이 도보로 이어지는 동화 같은 풍경으로 유명합니다. 카를교 위에서는 블타바강과 프라하성을 함께 조망할 수 있어 하루 중 여러 시간대에 걸쳐 방문할 가치가 있고, 구시가지 천문시계탑에서는 정시마다 인형극이 펼쳐집니다. 유럽 내에서도 물가가 비교적 저렴한 편이라 맥주·전통 음식을 부담 없이 즐길 수 있으며, 좁은 골목마다 소규모 갤러리와 기념품점이 자리해 느긋한 도보 여행에 알맞습니다. 근교 소도시 체스키크룸로프와 묶어 2~3일 코스로 여행하는 경우가 많습니다.',
@@ -1869,10 +1871,9 @@ export const overseasDestinations: OverseasDestination[] = [
     countryCode: "CZ",
     theme: "소도시·고성",
     image: {
-      url: "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Cesky_Krumlov_25.JPG/960px-Cesky_Krumlov_25.JPG",
       alt: "체스키크룸로프 성과 구시가지 전경",
-      sourceUrl:
-        "https://unsplash.com/photos/brown-concrete-building-during-daytime-lb1uMHiOFAs",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cesky_Krumlov_25.JPG",
     },
     summary:
       "체스키크룸로프는 블타바강이 S자로 휘감아 도는 지형 위에 세워진 중세 소도시로, 마을 전체가 유네스코 세계문화유산으로 지정될 만큼 원형이 잘 보존돼 있습니다. 체스키크룸로프성의 망토다리와 첨탑에서는 붉은 지붕이 이어지는 구시가지 전경을 한눈에 담을 수 있고, 좁은 골목 사이사이 공방과 카페가 자리해 반나절 도보 여행으로도 충분히 매력을 느낄 수 있습니다. 여름철에는 강에서 래프팅·카누를 즐기는 여행자가 많고, 마을 규모가 작아 프라하에서 당일치기로도 방문할 수 있지만 야경을 보려면 1박을 권장합니다. 관광객이 몰리는 성수기에는 이른 아침 방문이 한적합니다.",

@@ -50,10 +50,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "제주특별자치도",
     theme: "자연·해안",
     image: {
-      url: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80",
-      alt: "제주 해안도로와 유채꽃밭 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Jejuolle-route-10%282%29.jpg/960px-Jejuolle-route-10%282%29.jpg",
+      alt: "제주 산방산과 유채꽃밭 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/yellow-flower-field-near-body-of-water-during-daytime-3TLl_97HNJo",
+        "https://commons.wikimedia.org/wiki/File:Jejuolle-route-10(2).jpg",
     },
     summary:
       "제주는 화산섬 특유의 오름과 검은 현무암 해안, 사계절 다른 얼굴을 보여주는 자연경관으로 국내에서 가장 인기 있는 여행지 중 하나입니다. 동쪽 성산일출봉부터 서쪽 협재해수욕장까지 해안도로를 따라 드라이브하기 좋고, 섬 안쪽으로는 한라산과 크고 작은 오름들이 트레킹 코스를 이룹니다. 봄에는 유채꽃과 벚꽃이, 여름에는 에메랄드빛 바다가, 가을에는 억새와 감귤이, 겨울에는 한라산 설경이 매력을 더합니다. 올레길을 따라 마을과 해안을 잇는 도보 여행도 활발하며, 제주 전통 음식과 카페 문화가 잘 발달해 1일 코스와 장기 체류 코스 모두를 소화할 수 있는 여행지입니다.",
@@ -124,10 +124,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "부산광역시",
     theme: "도심·해안",
     image: {
-      url: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=800&q=80",
-      alt: "부산 감천문화마을 전경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg/960px-Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
+      alt: "부산 감천문화마을의 알록달록한 집들",
       sourceUrl:
-        "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-aXFojNVMYNo",
+        "https://commons.wikimedia.org/wiki/File:Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg",
     },
     summary:
       "부산은 해운대·광안리 해수욕장을 중심으로 한 해양 도시이자, 감천문화마을·보수동 책방골목 같은 원도심 골목 여행이 함께 즐거운 도시입니다. 부산항을 낀 국제시장과 자갈치시장에서는 활기찬 재래시장 분위기를, 해운대·마린시티에서는 고층 빌딩과 해변이 어우러진 현대적인 풍경을 경험할 수 있습니다. KTX로 서울에서 2시간 반 거리라 짧은 일정으로도 방문하기 좋고, 부산국제영화제가 열리는 가을에는 영화의전당 일대가 특히 붐빕니다. 바다·산·도심이 가까이 붙어 있어 하루 안에도 해변 산책과 산복도로 야경, 전통시장 먹거리 투어를 모두 소화할 수 있는 밀도 높은 여행지입니다.",
@@ -185,10 +185,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "경상북도",
     theme: "역사·유적",
     image: {
-      url: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Water_reflection_of_Donggung_Palace_in_Wolji_Pond_at_blue_hour_in_Gyeongju_South_Korea.jpg/960px-Water_reflection_of_Donggung_Palace_in_Wolji_Pond_at_blue_hour_in_Gyeongju_South_Korea.jpg",
       alt: "경주 동궁과 월지 야경",
       sourceUrl:
-        "https://unsplash.com/photos/lighted-pagoda-during-nighttime-6z1J2xkl0MU",
+        "https://commons.wikimedia.org/wiki/File:Water_reflection_of_Donggung_Palace_in_Wolji_Pond_at_blue_hour_in_Gyeongju_South_Korea.jpg",
     },
     summary:
       "경주는 신라 천년의 수도로, 불국사·석굴암 같은 세계문화유산부터 대릉원 고분군·동궁과 월지 야경까지 도시 전체가 하나의 야외 박물관 같은 여행지입니다. 첨성대와 대릉원 일대는 낮과 밤의 분위기가 확연히 달라 시간을 나눠 방문하기 좋고, 보문관광단지는 호수와 벚꽃길이 어우러져 봄철 명소로 꼽힙니다. 경주월드·황리단길 등 현대적인 즐길거리도 함께 발달해 있어 역사 탐방과 젊은 감성의 카페 거리를 함께 즐길 수 있습니다. 도시 규모가 크지 않아 자전거로 주요 유적지를 순환하며 둘러보기도 좋고, 1박 2일에서 2박 3일 일정으로 역사 교육 여행에 특히 적합합니다.",
@@ -246,10 +246,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "전라북도",
     theme: "한옥·미식",
     image: {
-      url: "https://images.unsplash.com/photo-1601809851085-5d7e3b76a08e?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Jeonju-_Part_II_-_Jeonju3094.jpg/960px-Jeonju-_Part_II_-_Jeonju3094.jpg",
       alt: "전주 한옥마을 기와 지붕 풍경",
       sourceUrl:
-        "https://unsplash.com/photos/brown-and-white-concrete-building-during-daytime-9J8vqLtEsHY",
+        "https://commons.wikimedia.org/wiki/File:Jeonju-_Part_II_-_Jeonju3094.jpg",
     },
     summary:
       "전주는 700여 채의 한옥이 밀집한 전주한옥마을을 중심으로, 전통과 미식이 함께 발달한 여행지입니다. 경기전·전동성당 등 역사적 건축물과 한옥 카페·공방이 한 골목 안에 공존해 도보로 둘러보기 좋고, 한복을 대여해 입고 거리를 걷는 체험도 인기가 많습니다. 전주는 전주비빔밥의 발상지이자 남부시장 야시장, 객리단길의 젊은 상권까지 갖춰 미식 여행지로도 손꼽힙니다. 도시 규모가 크지 않아 하루 코스로도 핵심 명소를 충분히 돌아볼 수 있고, 근교의 모악산·전주수목원과 묶어 1박 2일 코스를 구성하기에도 알맞습니다. 비 오는 날에는 한옥 처마 아래를 걷는 운치가 있고, 야간에는 경기전 돌담을 따라 조명이 켜져 다른 분위기의 산책도 즐길 수 있습니다.",
@@ -307,10 +307,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "강원특별자치도",
     theme: "산·바다",
     image: {
-      url: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=800&q=80",
-      alt: "속초 해변과 설악산 능선",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Korea-Seorak_Mountains_behind_Sokcho-01.jpg/960px-Korea-Seorak_Mountains_behind_Sokcho-01.jpg",
+      alt: "설악산 능선을 배경으로 한 속초 시내",
       sourceUrl:
-        "https://unsplash.com/photos/body-of-water-near-mountain-during-daytime-2LowviVHZ-E",
+        "https://commons.wikimedia.org/wiki/File:Korea-Seorak_Mountains_behind_Sokcho-01.jpg",
     },
     summary:
       "속초는 설악산 국립공원과 동해 바다를 동시에 품고 있어, 산과 바다를 하루에 오갈 수 있는 몇 안 되는 여행지입니다. 설악산 케이블카로 오른 권금성에서 바라보는 능선과, 속초해변·영금정에서 즐기는 일출은 계절과 관계없이 인상적입니다. 속초관광수산시장에서는 오징어순대·닭강정 같은 길거리 음식을 즐길 수 있고, 아바이마을에서는 갯배를 타고 이동하는 독특한 경험을 할 수 있습니다. 서울에서 동서고속도로를 이용하면 2시간대에 도착할 수 있어 주말 여행지로도 인기가 높고, 겨울에는 설경, 여름에는 해수욕을 각각 즐길 수 있어 사계절 방문객이 꾸준합니다.",
@@ -368,10 +368,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "전라남도",
     theme: "해안·야경",
     image: {
-      url: "https://images.unsplash.com/photo-1595351298020-038700609878?auto=format&fit=crop&w=800&q=80",
-      alt: "여수 밤바다 케이블카 야경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Yeosu-si%2C_South_Korea_%28Unsplash%29.jpg/960px-Yeosu-si%2C_South_Korea_%28Unsplash%29.jpg",
+      alt: "여수 돌산대교 야경",
       sourceUrl:
-        "https://unsplash.com/photos/city-lights-during-night-time-3TXlAqvbi_c",
+        "https://commons.wikimedia.org/wiki/File:Yeosu-si,_South_Korea_(Unsplash).jpg",
     },
     summary:
       '여수는 "여수 밤바다"라는 노래로도 잘 알려진 도시로, 해상 케이블카와 오동도, 돌산대교 야경이 대표 매력입니다. 낮에는 향일암·오동도 등 해안 산책로를 따라 걷고, 해가 지면 이순신광장과 낭만포차 거리를 중심으로 도시 전체가 야경 명소로 바뀝니다. 여수세계박람회장 일대는 아쿠아플라넷과 스카이타워 등 현대적 시설이 모여 있어 가족 단위 여행에도 적합합니다. 신선한 해산물을 활용한 갓김치·돌산갓김치·서대회무침 등 향토 음식이 발달해 있고, KTX로 서울에서 3시간대에 도착할 수 있어 짧은 일정의 남해안 여행으로 자주 선택됩니다. 봄철 향일암 동백꽃과 여름철 해상 불꽃쇼도 계절별로 다른 볼거리를 더합니다.',
@@ -429,10 +429,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "강원특별자치도",
     theme: "커피·해변",
     image: {
-      url: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80",
-      alt: "강릉 안목해변 커피거리",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Anmok_Beach_20220430_008.jpg/960px-Anmok_Beach_20220430_008.jpg",
+      alt: "강릉 안목해변과 커피잔 조형물",
       sourceUrl:
-        "https://unsplash.com/photos/brown-wooden-dock-on-beach-during-daytime-jK9dS3d1P7U",
+        "https://commons.wikimedia.org/wiki/File:Anmok_Beach_20220430_008.jpg",
     },
     summary:
       "강릉은 안목해변 커피거리로 대표되는 커피 여행지이자, 경포호·오죽헌 등 전통과 자연이 함께 어우러진 도시입니다. 안목해변을 따라 늘어선 카페에서 바다를 보며 커피를 마시는 코스가 특히 유명하고, 경포대·경포호는 사계절 산책 명소로 꾸준히 사랑받습니다. 오죽헌은 신사임당과 율곡 이이의 생가로, 전통 한옥과 정원을 함께 둘러볼 수 있는 역사 명소입니다. KTX 경강선 개통 이후 서울에서 2시간 이내로 접근이 쉬워져 당일 여행으로도 인기가 높고, 최근에는 명주동 골목과 강릉중앙시장 등 로컬 감성의 거리도 함께 주목받고 있습니다. 겨울에는 눈 쌓인 경포호와 대관령 고갯길 풍경이 더해져 사계절 내내 다른 인상을 남기는 여행지입니다.",
@@ -490,10 +490,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "경상남도",
     theme: "섬·예술",
     image: {
-      url: "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?auto=format&fit=crop&w=800&q=80",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Korea-Tongyeong-Dongpirang_Village-10.jpg/960px-Korea-Tongyeong-Dongpirang_Village-10.jpg",
       alt: "통영 동피랑 벽화마을 골목",
       sourceUrl:
-        "https://unsplash.com/photos/photo-of-village-near-mountain-during-daytime-2FaEFyQlZE0",
+        "https://commons.wikimedia.org/wiki/File:Korea-Tongyeong-Dongpirang_Village-10.jpg",
     },
     summary:
       "통영은 한려수도의 중심에 위치한 항구 도시로, 동피랑 벽화마을과 케이블카로 오르는 미륵산, 크고 작은 섬 여행이 어우러진 여행지입니다. 동피랑 골목은 알록달록한 벽화와 바다 전망으로 사진 명소가 되었고, 미륵산 케이블카를 타면 한려해상국립공원 전체를 한눈에 담을 수 있습니다. 통영항에서 배를 타고 나가는 소매물도·한산도 등 섬 여행도 대표 코스로, 하루 코스 또는 1박 코스로 섬을 다녀올 수 있습니다. 윤이상·박경리 등 예술인의 고향으로도 알려져 있어 도시 곳곳에 문화예술 공간이 자리하고, 충무김밥을 비롯한 향토 음식도 여행의 큰 즐거움입니다.",
@@ -551,10 +551,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "전라남도",
     theme: "대나무숲·자연",
     image: {
-      url: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=800&q=80",
-      alt: "담양 죽녹원 대나무숲 산책로",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bamboo_forest_in_Damyang_South_Korea_2015-05-06%286%29.jpg/960px-Bamboo_forest_in_Damyang_South_Korea_2015-05-06%286%29.jpg",
+      alt: "담양 죽녹원 대나무숲",
       sourceUrl:
-        "https://unsplash.com/photos/green-bamboo-trees-during-daytime-iprc78dvNhM",
+        "https://commons.wikimedia.org/wiki/File:Bamboo_forest_in_Damyang_South_Korea_2015-05-06(6).jpg",
     },
     summary:
       "담양은 죽녹원 대나무숲과 메타세쿼이아 가로수길로 대표되는 자연 여행지로, 초록빛 산책로를 따라 걷는 느린 여행에 알맞은 곳입니다. 죽녹원은 여러 갈래의 대나무숲 산책로가 조성돼 있어 계절에 관계없이 시원한 그늘 산책을 즐길 수 있고, 메타세쿼이아길은 영화 촬영지로도 알려져 사진 명소로 꾸준히 사랑받습니다. 소쇄원·명옥헌원림 같은 전통 정원도 함께 있어 조선시대 선비 문화를 엿볼 수 있으며, 담양읍내에는 떡갈비 거리가 형성돼 있어 자연 여행과 미식을 함께 즐길 수 있습니다. 광주광역시와 가까워 반나절~하루 코스로도 방문하기 좋습니다.",
@@ -612,10 +612,10 @@ export const domesticDestinations: DomesticDestination[] = [
     region: "경상북도",
     theme: "전통·유교문화",
     image: {
-      url: "https://images.unsplash.com/photo-1601287834818-93da919ea2fd?auto=format&fit=crop&w=800&q=80",
-      alt: "안동 하회마을 전통 가옥 풍경",
+      url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Hahoe_Folk_Village_03.jpg/960px-Hahoe_Folk_Village_03.jpg",
+      alt: "안동 하회마을 전경",
       sourceUrl:
-        "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-ubXBd7hoqfE",
+        "https://commons.wikimedia.org/wiki/File:Hahoe_Folk_Village_03.jpg",
     },
     summary:
       "안동은 유네스코 세계문화유산인 하회마을을 중심으로, 조선시대 유교 문화와 전통 가옥이 잘 보존된 여행지입니다. 하회마을에서는 실제 주민이 거주하는 전통 가옥 사이를 걸으며 하회별신굿탈놀이 등 전통 공연도 관람할 수 있고, 병산서원·도산서원은 서원 건축과 자연이 어우러진 조용한 산책 코스로 인기가 높습니다. 안동댐과 월영교는 야간 조명이 켜지면 산책하기 좋은 명소로 바뀌며, 안동찜닭·헛제사밥 등 전통 음식 문화도 함께 발달해 있습니다. 서울에서 KTX와 시내버스를 이용해 반나절이면 도착할 수 있어 전통문화 체험을 목적으로 한 당일·1박 여행에 적합합니다.",
