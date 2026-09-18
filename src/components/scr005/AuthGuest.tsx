@@ -23,7 +23,7 @@ type Mode = "login" | "signup" | "reset";
 const MODE_TABS: { id: Mode; label: string }[] = [
   { id: "login", label: "로그인" },
   { id: "signup", label: "회원가입" },
-  { id: "reset", label: "비밀번호 재설정" },
+  { id: "reset", label: "비밀번호 찾기" },
 ];
 
 export const PASSWORD_MIN_LENGTH = 8;
@@ -177,7 +177,7 @@ function AuthCard({ onSignedIn }: AuthGuestProps) {
   return (
     <div
       data-testid="auth-card"
-      className="rounded-[14px] border border-[#E3E2DF] bg-[#FFFFFF] p-6"
+      className="rounded-[14px] border border-[#E3E2DF] bg-[#FFFFFF] p-4 sm:p-6"
     >
       <Tabs
         tabs={MODE_TABS.map((tab) => ({

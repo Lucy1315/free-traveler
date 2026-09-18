@@ -53,7 +53,7 @@ export default function Tabs({
     <div
       role="tablist"
       aria-label={ariaLabel}
-      className="flex items-center gap-6 overflow-x-auto border-b border-[#E3E2DF]"
+      className="flex items-center gap-4 overflow-x-auto border-b border-[#E3E2DF] sm:gap-6"
     >
       {tabs.map((tab, index) => {
         const active = tab.id === activeTabId;

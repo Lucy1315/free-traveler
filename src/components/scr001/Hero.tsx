@@ -158,16 +158,16 @@ export default function Hero({ onSearchSelectDestination }: HeroProps) {
         )}
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <a
           href="#domestic-destinations"
-          className="inline-flex min-h-[44px] items-center justify-center rounded-[8px] bg-[#FF6A4D] px-5 text-[16px] font-semibold text-[#FFFFFF] hover:bg-[#E5502F]"
+          className="inline-flex min-h-[44px] items-center justify-center whitespace-nowrap rounded-[8px] bg-[#FF6A4D] px-5 text-[16px] font-semibold text-[#FFFFFF] hover:bg-[#E5502F]"
         >
           국내 여행지 보기
         </a>
         <a
           href="#overseas-destinations"
-          className="inline-flex min-h-[44px] items-center justify-center rounded-[8px] border border-[#C7C5C0] bg-[#FFFFFF] px-5 text-[16px] font-semibold text-[#26282C] hover:bg-[#F7F6F4]"
+          className="inline-flex min-h-[44px] items-center justify-center whitespace-nowrap rounded-[8px] border border-[#C7C5C0] bg-[#FFFFFF] px-5 text-[16px] font-semibold text-[#26282C] hover:bg-[#F7F6F4]"
         >
           해외 여행지 보기
         </a>

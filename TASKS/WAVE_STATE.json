@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-17T20:21:24+09:00",
-  "current_wave": "W10",
+  "current_wave": "W11",
   "waves": [
     {
       "wave_id": "W01",
@@ -162,7 +162,7 @@
         "UNIT-MATE-STATE",
         "UNIT-TRAVEL-DATES"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -479,8 +479,9 @@
     },
     "MANUAL-CHECK-RESPONSIVE": {
       "wave": "W11",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:44:53+09:00",
+      "note": "자동 측정·스크린샷 확인 완료(docs/qa/MANUAL-CHECK-RESPONSIVE.md). 실기기·로그인 후 화면은 문서 3절 미완료."
     },
     "TEST-RLS-BASIC": {
       "wave": "W11",
@@ -513,5 +514,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-19T00:34:51+09:00"
+  "updated_at": "2026-09-19T00:44:53+09:00"
 }
