@@ -173,7 +173,7 @@
         "RELEASE-CHECK-CONTENT-COMPLETENESS",
         "RELEASE-CHECK-DEPLOY-ENV"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     }
@@ -512,9 +512,10 @@
     },
     "RELEASE-CHECK-DEPLOY-ENV": {
       "wave": "W12",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T01:09:21+09:00",
+      "note": "TLS·비밀키·비용 충족. Supabase DB 마이그레이션 미적용은 출시 차단 항목으로 문서 5절에 기록."
     }
   },
-  "updated_at": "2026-09-19T01:07:39+09:00"
+  "updated_at": "2026-09-19T01:09:21+09:00"
 }
