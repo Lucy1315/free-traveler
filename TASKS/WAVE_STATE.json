@@ -148,7 +148,7 @@
         "MANUAL-CHECK-A11Y-KEYBOARD",
         "MANUAL-CHECK-EXTERNAL-LINKS"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -467,13 +467,15 @@
     },
     "MANUAL-CHECK-A11Y-KEYBOARD": {
       "wave": "W10",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:34:51+09:00",
+      "note": "자동 측정·흐름 재현 완료(docs/qa/MANUAL-CHECK-A11Y-KEYBOARD.md). 사람 확인 항목(실브라우저 select·스크린리더·실기기·로그인 후 흐름)은 문서 3절에 미완료로 남김."
     },
     "MANUAL-CHECK-EXTERNAL-LINKS": {
       "wave": "W10",
-      "status": "PENDING",
-      "updated_at": "2026-09-17T20:21:24+09:00"
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:34:51+09:00",
+      "note": "자동 측정·흐름 재현 완료(docs/qa/MANUAL-CHECK-EXTERNAL-LINKS.md). 사람 확인 항목(실브라우저 select·스크린리더·실기기·로그인 후 흐름)은 문서 3절에 미완료로 남김."
     },
     "MANUAL-CHECK-RESPONSIVE": {
       "wave": "W11",
@@ -511,5 +513,5 @@
       "updated_at": "2026-09-17T20:21:24+09:00"
     }
   },
-  "updated_at": "2026-09-19T00:28:04+09:00"
+  "updated_at": "2026-09-19T00:34:51+09:00"
 }
